@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: beige;
+    font-size: 1.0rem;
+
+}
+
+header {
+    margin: 15px;
+    line-height: 2;
+    background-color: coral;
+    outline: 1px solid rgba(12, 81, 231, 0.767);
+}
+
+h1 {
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: chartreuse;
+    font-size: 1.5rem;
+    outline: 1px solid rebeccapurple;
+    line-height: 3;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+  
+}
+.photo img {
+    max-height: 350px;
+    margin: 15px;
+}
+
+#about p {
+    float: right;
+
+}
