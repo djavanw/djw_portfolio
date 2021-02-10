@@ -5,49 +5,129 @@
 }
 
 body {
-    background-color: beige;
-    font-size: 1.0rem;
-
+    font-size: 1.50rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
 }
 
-header {
-    margin: 15px;
-    line-height: 2;
-    background-color: coral;
-    outline: 1px solid rgba(12, 81, 231, 0.767);
-}
 
-h1 {
-    text-align: center;
-}
-
-header nav {
+.top-container {
+    background-color: rgb(236, 223, 236); /*This is bg-color for header*/
     display: flex;
+    justify-content: space-between;
+    padding: .50rem;
+    height: 10rem;
+    align-items: center;
+    width: 100%;
+        
+}
+
+.title {
+    color: turquoise;
+    display: flex;
+    background-color: tomato;
+    height: 150px;
+    flex: 1 0 10rem;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.nav-wrapper {                /* Nav bar styling*/
+    display: flex;
+    background-color: red;
+    height: 150px;
+    flex: 1 0 40rem;
+    align-items: center;
+    padding: 1rem;
+    
+}
+.nbar {                      /* Nav bar anchor styling*/
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    text-decoration: none;
+    font-size: 2rem;
+}
+    
+.photo img {
+    max-width: 18rem;
+    padding: .50rem;
+}
+
+main {
+    background-color: royalblue;
+    height: 50rem;
+    display: flex;
+}
+
+#about {
+    background-color: saddlebrown;
+    display: flex;
+    height: 22rem;
+}
+
+#works {
+    background-color: seagreen;
+}
+
+#contact {
+    background-color: slategrey;
+}
+
+footer {
+    background-color: tan;
+}
+/*
+.title {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    text-align: center; 
+    background-color: blue;
+    justify-items: center;
+    align-self: center;
+}
+
+nav {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    background-color: blueviolet;
     flex-direction: row;
-    justify-content:space-evenly;
-    background-color: chartreuse;
-    font-size: 1.5rem;
-    outline: 1px solid rebeccapurple;
-    line-height: 3;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+}
+ */
+
+
+    /* outline: 1px solid rgba(12, 81, 231, 0.767); */
 }
 
-#about {
+/* h1 {
+    text-align: center;
+} */
+
+/* header nav {
     display: flex;
-    flex-direction: column;
-  
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: chartreuse; 
+    font-size: 1.5rem;
+    outline: 1px solid rebeccapurple;
+    line-height: 3;
+} */
+
+
+
+
+/*   
 }
 .photo img {
     max-height: 350px;
     margin: 15px;
 }
 
-#about p {
-    float: right;
 
-}
+} */
