@@ -12,45 +12,50 @@
 </head>
 
 <body>
-    <header class="top-container">
-        <h1 class="title">D.J. Worthy</h1>
-        <nav class="nav-wrapper">
-            <a class="nbar" href="#about">About</a>
-            <a class="nbar" href="#works">Works</a>
-            <a class="nbar" href="#contact">Contact</a>
+    <header class="head-container"><!--container-->
+        <h1 class="title">D.J. Worthy</h1><!--child--> 
+        <nav class="nav-container"><!--container-->
+            <a class="navbar" href="#about">About</a>
+            <a class="navbar" href="#works">Works</a>
+            <a class="navbar" href="#contact">Contact</a>
         </nav>
     </header>
+
     <main>
-        <section class="mid-container">
-            <article id="about">
-                <figure class="photo">
+        <section>
+            <article id="about" class="about1"><!--Parent Wrapper-->
+                <figure class="photo"><!--child--> 
                     <img src="./assets/images/djw96gh.jpg" alt="photo of Javan dressed as pirate">
                 </figure>
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse
-                    faucibus interdum posuere. Fermentum iaculis eu non diam.
-                    Ipsum dolor sit amet consectetur adipiscing elit pellentesque
-                    habitant morbi. Quam pellentesque nec nam aliquam sem et tortor consequat.
-                    Sed ullamcorper morbi tincidunt ornare massa eget. Aliquam sem fringilla ut morbi.
-                    Sed risus ultricies tristique nulla aliquet enim tortor at. In dictum non consectetur a.
-                    Diam maecenas ultricies mi eget. Nunc mattis enim ut tellus elementum sagittis vitae et.
-                    Eleifend mi in nulla posuere sollicitudin.
-                </p>
+                
+                <div class="split"> <!--wrapper used to stack h2 and p as column-->
+                    <h2>About Me</h2><!--child-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse
+                        faucibus interdum posuere. Fermentum iaculis eu non diam.
+                        Ipsum dolor sit amet consectetur adipiscing elit pellentesque
+                        habitant morbi. Quam pellentesque nec nam aliquam sem et tortor consequat.
+                        Sed ullamcorper morbi tincidunt ornare massa eget. Aliquam sem fringilla ut morbi.
+                        Sed risus ultricies tristique nulla aliquet enim tortor at. In dictum non consectetur a.
+                        Diam maecenas ultricies mi eget. Nunc mattis enim ut tellus elementum sagittis vitae et.
+                        Eleifend mi in nulla posuere sollicitudin.
+                    </p><!--child-->
+                </div>
             </article>
 
-
-            <article id="works">
+            <article id="works" class="works1">
                 <h2>Works</h2>
-
+                <img src="#" alt="large works" />
+                <img src="#" alt="small works" />
+                <img src="#" alt="small works" />
+                <img src="#" alt="small works" />
+                <img src="#" alt="small works" />
             </article>
-
             
             <article id="contact">
                 <h2>Contact</h2>
                 <p>Email:</p>
-                <p>Mobile:</p>
-
+                <p>Mobile: 555-525-7777</p>
             </article>
 
         </section>

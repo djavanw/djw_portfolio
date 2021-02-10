@@ -5,70 +5,229 @@
 }
 
 body {
-    font-size: 1.50rem;
+    font-size: 1.75rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 100%;
+    margin: 25px;
 }
 
-
-.top-container {
-    background-color: rgb(236, 223, 236); /*This is bg-color for header*/
+.head-container {
     display: flex;
-    justify-content: space-between;
-    padding: .50rem;
-    height: 10rem;
-    align-items: center;
-    width: 100%;
-        
+    background-color: aqua;
+    height: 100px;
 }
 
 .title {
-    color: turquoise;
+    flex: 1 1 50%;
+    background-color: blue;
+    align-self: center;
+        
+}
+
+.nav-container {
+    flex: 1 1 50%;
+    background-color: burlywood;
     display: flex;
-    background-color: tomato;
-    height: 150px;
-    flex: 1 0 10rem;
     align-items: center;
-    padding: 1rem;
+    
     
 }
 
-.nav-wrapper {                /* Nav bar styling*/
+.nav-container .navbar {
+    text-decoration: none;
+    flex: 1 1 auto;
+    background-color: chartreuse;
+}
+
+.about1 {
     display: flex;
+    flex-direction: row;
+}
+
+.photo {
+    height: 400px;
+    background-color: black;
+}
+
+.photo img {
+    max-height: 300px;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+.split h2 {
+    background-color: blueviolet;
+    flex: 1 1 25%;
+    align-items: center;
+}
+
+.split p {
+    background-color: coral;
+    flex: 1 1 75%;
+}
+
+.works1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.works1 h2 {
+    background-color: crimson;
+    text-align: center;
+}
+
+
+
+
+/* .top-container {
+    background-color: rgb(236, 9, 236); This is bg-color for header */
+    /* display: flex;
+    justify-content: space-between;
+    padding: .50rem;
+    height: 200px;
+    align-items: center;
+    width: 100%;
+        
+} */
+
+/* .title {
+    color: turquoise;
+    background-color: tomato;
+    /* height: 150px; */
+    /* flex: 1 0 10rem; */
+    /* justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+} */
+
+/* .nav-wrapper {                /* Nav bar styling*/
+    /*display: flex;
     background-color: red;
     height: 150px;
     flex: 1 0 40rem;
     align-items: center;
     padding: 1rem;
     
-}
-.nbar {                      /* Nav bar anchor styling*/
-    color: blue;
+} */
+/* .nbar {                      /* Nav bar anchor styling*/
+    /*color: blue;
     display: flex;
     flex-direction: column;
     margin: 1rem auto;
     text-decoration: none;
     font-size: 2rem;
-}
-    
-.photo img {
-    max-width: 18rem;
-    padding: .50rem;
-}
+} */
 
-main {
+/* main {
     background-color: royalblue;
-    height: 50rem;
-    display: flex;
-}
+    height: 700px;
+} */
 
-#about {
+/* Fixed the Parent/Child Flexbox */
+/* section {
+    display: flex;
+    flex-direction: column;
+} */
+/* 
+article {
+    background-color: springgreen;
+    margin: 10px;
+    padding: 10px;
+} */
+
+/* .figwrapper {
+    display: flex;
+    height: 310px;
+} */
+/* 
+.photo img {
+    height: 300px;
+    
+} */
+
+/* .split {
+    display: flex;
+    flex-direction: row;
+    height: 310px;
+} */
+/* 
+.split h2 p {
+    
+} */
+
+
+
+/* .photo, #about h2, #about p {
+    display: inline-flex;
+    align-items: center;
+    background-color: blue;
+    flex-direction: column;
+} */
+
+/* .about1 {
     background-color: saddlebrown;
     display: flex;
     height: 22rem;
-}
+    min-width: 33.3%;
+    
+} */
 
-#works {
+/* .photo {
+    display: flex; */
+    /* width: 15%; */
+    /* height: 350px; */
+    /* background-color: darkslateblue;
+} */
+/* .photo img {
+    /* min-width: 18rem; */
+    /*padding: .50rem; */
+    /* min-width: 33.3%; */
+    /* height: 22rem; */
+    /* background-color:black ;
+} */
+
+/* .split {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 53%;
+    background-color: rgb(196, 28, 28);
+} */
+
+/* .split h2 {
+    background-color: blue;
+    height: 50px;
+    padding: .50rem;
+    text-align: center; */
+    
+    /* flex-shrink: 2;
+    flex-basis: 20%;} */
+    
+
+
+/* .split p {
+    background-color: cornflowerblue;
+    height: 300px;
+    padding: .50rem;
+    /* flex-shrink: 2;
+    flex-basis: 60%;} */
+ 
+
+/* h2, p {
+    columns: black;
+} */
+
+/* article {
+   display: flex;
+   
+} */
+
+
+
+/* #works {
     background-color: seagreen;
 }
 
@@ -78,7 +237,7 @@ main {
 
 footer {
     background-color: tan;
-}
+} */
 /*
 .title {
     grid-column: 1;
