@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior:smooth;
+}
+
 body {
     font-size: 1.75rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -18,65 +22,127 @@ body {
 
 .title {
     flex: 1 1 50%;
-    background-color: blue;
+    /* background-color: blue; */
     align-self: center;
+    padding: 10px;
         
 }
 
 .nav-container {
     flex: 1 1 50%;
-    background-color: burlywood;
+    /* background-color: burlywood; */
     display: flex;
     align-items: center;
-    
-    
 }
 
 .nav-container .navbar {
     text-decoration: none;
-    flex: 1 1 auto;
-    background-color: chartreuse;
+    flex: 1;
+    /* background-color: chartreuse; */
 }
 
 .about1 {
     display: flex;
     flex-direction: row;
+    background-color: black;
 }
 
 .photo {
     height: 400px;
-    background-color: black;
+    background-color: red;
 }
 
-.photo img {
-    max-height: 300px;
+.photo .blueshirt {
+    height: 400px;
+    padding: 10px;
 }
 
 .split {
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 .split h2 {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     flex: 1 1 25%;
     align-items: center;
+    text-align: center;
+    padding: 10px;
 }
 
 .split p {
-    background-color: coral;
+    /* background-color: coral; */
     flex: 1 1 75%;
+    padding: 10px;
 }
 
 .works1 {
     display: flex;
     flex-direction: column;
+    height: 800px;
+    background-color: cyan;
 }
 
 .works1 h2 {
-    background-color: crimson;
+    /* background-color: crimson; */
+    text-align: center;
+    flex: 1 1 10%;
+    padding: 10px;
+}
+
+.ports {
+    flex: 1 1 90%;
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.large {
+    flex: 0 0 auto;
+    /* background-color: darkmagenta; */
+    padding: 10px;
+}
+
+.larg-img {
+    max-height: 650px;
+   
+}
+
+.small {
+    flex: 1 1 auto;
+    /* background-color: darksalmon; */
+    padding: 10px;
+}
+
+.small-img {
+    height: 250px;
+    /* background-color: darkturquoise; */
+}
+
+.contact1 {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+}
+
+.contact1 {
+    display: flex;
+    text-align: center;
+    background-color: darkturquoise;
+    justify-content: center;
+}
+
+.contact1 h2 p {
+    flex: 1;
+}
+
+footer {
     text-align: center;
 }
+
 
 
 
