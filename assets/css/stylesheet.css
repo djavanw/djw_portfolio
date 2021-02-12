@@ -9,63 +9,89 @@ html {
 }
 
 body {
-    font-size: 1.75rem;
+    font-size: 4vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 25px;
+    margin: 5px;
+    background-color: gray;
+}
+
+h2 {
+    font-size: .80em;
+}
+
+p {
+    font-size: .40em;
 }
 
 .head-container {
     display: flex;
     background-color: aqua;
-    height: 100px;
+    /* height: 100px; */
+    flex-direction: column;
 }
 
 .title {
-    flex: 1 1 50%;
+    flex: 1 1 40%;
     /* background-color: blue; */
     align-self: center;
     padding: 10px;
+    font-size: 1.15em;
         
 }
 
 .nav-container {
-    flex: 1 1 50%;
+    flex: 1 1 60%;
     /* background-color: burlywood; */
+    padding: 5px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    font-size: .6em;
 }
 
 .nav-container .navbar {
     text-decoration: none;
     flex: 1;
+    text-align: center;
     /* background-color: chartreuse; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+sect1, sect2, sect3 {
+    flex:  1; /* This is not needed or just section*/
 }
 
 .about1 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: black;
+    /* max-height: 400px; */ /* Use this for the 960 view*/
 }
 
-.photo {
-    height: 400px;
-    background-color: red;
-}
-
-.photo .blueshirt {
-    height: 400px;
+.blueshirt {
+    /* height: 400px; */
+    /* padding: 10px; */
     padding: 10px;
+    flex-grow: .5;
+    flex-shrink: .25;
+    /* min-width: 0; */
+    flex-basis: 50%;
 }
 
 .split {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     color: white;
+    flex-basis: 50%;
 }
 
 .split h2 {
     /* background-color: blueviolet; */
-    flex: 1 1 25%;
+    flex: 1 1 1;
     align-items: center;
     text-align: center;
     padding: 10px;
@@ -73,75 +99,326 @@ body {
 
 .split p {
     /* background-color: coral; */
-    flex: 1 1 75%;
+    flex: 1 1 1;
     padding: 10px;
+    text-align: justify;
+    /* font-size: .70rem; */
 }
+
+/* This is the start of the Works area of the Page */
 
 .works1 {
     display: flex;
     flex-direction: column;
-    height: 800px;
-    background-color: cyan;
+    /* max-height: 650px; */
+    background-color: pink;
 }
 
 .works1 h2 {
-    /* background-color: crimson; */
     text-align: center;
-    flex: 1 1 10%;
+    /* flex: 1 1 10%; */
     padding: 10px;
 }
+
+/* This area is for the large portfolio photo */
 
 .ports {
-    flex: 1 1 90%;
-    background-color: darkgreen;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
+    /* flex: 1 1 90%; */
+    background-color: rgb(22, 0, 100);
+    display: flex;    /*You must keep this flex */
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* height: 500px;  */ /* Use this at 960px  */
+}   
 
-.large {
-    flex: 0 0 auto;
-    /* background-color: darkmagenta; */
+.ports-large {
     padding: 10px;
+    flex-grow: .5;
+    flex-shrink: .25;
+    min-width: 0;
+    flex-basis: 50%;
+    /* flex: 3 1 50%; */
 }
+ /* Not used any more */
+/* .large { */
+    /* flex: 1 1 auto; */
+    /* background-color: darkmagenta; */
+    /* display: flex; */
+    /* padding: 10px;
+    flex-wrap: wrap;
+} */
 
-.larg-img {
-    max-height: 650px;
-   
-}
+/* .large img {
+    height: 200px;
+    flex: 1 90 200%;
+    min-height: 0;
+} */
+ /* Not used any more */
+
+
+/* This area is for the small photos */
 
 .small {
-    flex: 1 1 auto;
-    /* background-color: darksalmon; */
+    /* flex: 1 1 auto; */
+    display: flex;
     padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* height: 100px;
+    width: 50px; */
 }
 
-.small-img {
-    height: 250px;
+.small .small-img {
+    padding: 10px;
+    flex-grow: .5;
+    flex-shrink: .25;
+    min-width: 0;
+    flex-basis: 50%;
+    /* height: 175px; */
     /* background-color: darkturquoise; */
+     /* flex: .5 .25 50%; */
+   /* flex-shrink: 5;
+    flex-grow: 1;
+    flex-basis: 100px; */
 }
 
+/* This is the contact area of the page */
 .contact1 {
     display: flex;
-    height: 200px;
+    /* height: 200px; */
     flex-direction: column;
-}
-
-.contact1 {
-    display: flex;
-    text-align: center;
     background-color: darkturquoise;
-    justify-content: center;
+    text-align: center;
 }
 
-.contact1 h2 p {
-    flex: 1;
-}
+
 
 footer {
     text-align: center;
 }
+
+
+/* Media Queries */
+
+
+
+
+
+/* @media screen and (min-width: 768px) {
+    body {
+        background-color: orange;
+    }
+} */
+
+@media (min-width:4320px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 5550px) {
+    body {
+        background-color: yellow;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    p {
+        font-size: .55em;
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    body {
+        background-color: rebeccapurple;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .head-container {
+        display: flex;
+        background-color: aqua;
+        flex-direction: row;
+        height: 100px;
+    }
+
+    .title {
+        flex: 1 1 40%;
+        /* background-color: blue; */
+        align-self: center;
+        padding: 10px;
+        font-size: 1.50em;
+    }
+    
+    .nav-container {
+        flex: 1 1 60%;
+        /* background-color: burlywood; */
+        display: flex;
+        align-items: center;
+        font-size: 1em;
+    }
+    
+    .nav-container .navbar {
+        text-decoration: none;
+        flex: 1;
+        /* background-color: chartreuse; */
+    }
+
+    main {
+        /* display: flex;
+        flex-direction: column; */
+    }
+        section {
+        /* flex:1; */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about1 {
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        /* max-height: 400px; */
+        
+    }
+
+    .blueshirt {
+        /* height: 400px; */
+        /* padding: 10px; */
+        padding: 10px;
+        flex-grow: .5;
+        flex-shrink: .25;
+        min-width: 0;
+        flex-basis: 40%;
+    }
+    
+    .split {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        flex-basis: 60%;
+    }
+    
+    .split h2 {
+        /* background-color: blueviolet; */
+        flex: 1 1 0;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .split p {
+        /* background-color: coral; */
+        flex: 1 1 0;
+        padding: 10px;
+        font-size: 2.25rem;
+    }
+    
+    /* This is the start of the Works area of the Page */
+    
+    .works1 {
+        display: flex;
+        flex-direction: column;
+        /* height: 550px; */
+        background-color: pink;
+    }
+    
+    .works1 h2 {
+        text-align: center;
+        height: 150px;
+        /* flex: 1 1 10%; */
+        padding: 10px;
+        
+    }
+      
+    /* This area is for the large portfolio photo */
+
+    .ports {
+        /* flex: 1 1 90%; */
+        background-color: rgb(22, 0, 100);
+        display: flex;    /*  You must keep this flex */
+        flex-direction: row;
+        justify-content: space-between;
+        height: 600px;
+    }   
+    
+    .ports-large {
+        height: 500px;
+        padding: 10px;
+        /* flex-grow: .5;
+        flex-shrink: .25;
+        min-width: 0;
+        flex-basis: 50%; */
+        flex: 3 1 40%;
+    }
+
+    /* This area is for the small photos */
+
+    .small {
+        flex: 1 1 60%;
+        display: flex;
+        padding: 10px;
+        flex-wrap: wrap;
+        /* height: 400px; */
+        /* width: 50px;  */
+    }
+
+    /* .small figure {
+        flex: .5 0 12.5%;
+    } */
+
+    figure {
+        text-align: center;
+        color: white;
+    }
+
+    .small .small-img { 
+        height: 175px;
+        /* background-color: darkturquoise; */
+        flex: .5 0 12.5%;
+    /* flex-shrink: 5;
+        flex-grow: 1;
+        flex-basis: 100px; */
+    }
+
+    /* This is the contact area of the page */
+    .contact1 {
+        display: flex;
+        height: 175px;
+        flex-direction: column;
+        background-color: darkturquoise;
+        text-align: center;
+    }
+
+    .contact1 p {
+        font-size: .90em;
+    }
+
+    footer p {
+        font-size: .65em;
+        text-align: right;
+    }
+
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
