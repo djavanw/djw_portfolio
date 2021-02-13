@@ -9,20 +9,16 @@ html {
 }
 
 body {
-    font-size: 4vh;
+    font-size: 3vh;
     color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 5px;
-    background-color: rgb(204, 212, 221);
+    background-color: white;
 }
 
 h2 {
     font-size: 1.75em;
     background-color:lightsteelblue;
-}
-
-p {
-    font-size: .40em;
 }
 
 .top-container {
@@ -58,7 +54,6 @@ p {
     flex: 1 1 33.3%;
     text-align: center;
     text-decoration: none;
-     
 }
 
 /* main {
@@ -73,7 +68,7 @@ p {
 .aboutme {
     display: flex;
     flex-direction: row;
-    
+    background-color: lightskyblue;
 }
 
 .blueshirt {
@@ -84,7 +79,7 @@ p {
     max-width: 400px;
     align-self: center;
     padding: 10px;
-    background-color: green;
+    background-color: lightskyblue;
     
 }
 
@@ -98,13 +93,17 @@ p {
 .split h2 {
     flex: 1 1 25px;
     text-align: center;
+    background-color: lightskyblue;
 }
 
 .split p {
     flex: 1 1 500px;
-    font-size: .70em;
+    font-size: .95em;
     text-align: justify;
-    
+    background-color: white;
+    border: 15px solid lightskyblue;
+    padding: 15px;
+        
 }
 
 /* .sect2 {
@@ -124,14 +123,14 @@ p {
     
 }
 
+/***** Portfolio responsiveness styling area *****/
 .portf {
     flex: 1 1 100%;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     flex-wrap: wrap;
-    height: 600px;
-        
+    height: 625px;
 }   
 
 .portf .web-large {
@@ -157,14 +156,10 @@ p {
     flex: 1 1 100%;
 }
 
-/********* Works styling for the photos  *****/
+/**** Works styling for the photos  ****/
 .web-large {
-    margin: 5px;
     background: url(/assets/images/obi-onyeador-xA1l7OCKL4Q-unsplash_small3.jpg);
-    background-repeat: no-repeat;
     background-size: 400px 600px;
-    text-decoration: none;
-    color: black;
 }
 
 .link1 a:link {
@@ -177,39 +172,33 @@ figure a:visited {
 }
 
 .web-1 {
-    margin: 5px;
     background: url(/assets/images/heylagostechie-YgOCJz9uGMk-unsplash_small2.jpg);
-    background-repeat: no-repeat;
     background-size: 400px 400px;
-    text-decoration: none;
-    color: white;
 }
 
 .web-2 {
-    margin: 5px;
     background: url(/assets/images/joan-gamell-ZS67i1HLllo-unsplash_large.jpg);
-    background-repeat: no-repeat;
     background-size: 400px 400px;
-    text-decoration: none;
-    color: white;
 }
 
 .web-3 {
-    margin: 5px;
     background: url(/assets/images/sigmund-wWpsETBAY_U-unsplash_small4.jpg);
-    background-repeat:no-repeat;
     background-size: 400px 400px;
-    text-decoration: none;
-    color: white;
 }
 
 .web-4 {
     margin: 5px;
     background: url(/assets/images/michael-dziedzic--Rc6usOigMk-unsplash_small4a.jpg);
-    background-repeat: no-repeat;
     background-size: 400px 400px;
+}
+
+/**** Addition styling to all portfolio photos ****/
+.web-large, .web-1, .web-2, .web-3, .web-4 {
+    margin: 5px;
+    background-repeat: no-repeat;
     text-decoration: none;
-    color: white;
+    text-align: center;
+    color: red;
 }
 
 .contact1 {
@@ -217,22 +206,23 @@ figure a:visited {
     height: 175px;
     flex-direction: column;
     text-align: center;
-    font-size: .90em;
+    /* font-size: .70em; */
+}
+/**** Styling for Contact area ****/
+.contact1 a {
+    /* flex: 1 1 100%; */
+    font-size: .95em;
 }
 
-.contact1 h2 a {
-    flex: 1 1 100%;
-    
-}
-
+/**** Styling for Footer area ****/
 footer p {
-    font-size: .65em;
+    font-size: .55em;
     text-align: right;
 }
 
 
-/* Media Queries ***********************************/
-/* Media Queries Large Screen*/
+/**** Media Queries ****/
+/**** Media Queries Large Screen ****/
 @media screen and (max-width: 992px){
     .title {
         font-size: 2.25em;
@@ -246,11 +236,12 @@ footer p {
     }
 
     .split p {
-        font-size: .65em;
+        font-size: .75em;
+        flex: 1 1 300px;
     }
 
     .portf {
-        height: 500px;
+        height: 525px;
     }
 
     .web-large {
@@ -262,8 +253,6 @@ footer p {
         background-size: 275px 275px;
         font-size: .6em;
     }
-
-
 }
 
 /* Media Queries Medium Screen */
@@ -276,17 +265,21 @@ footer p {
     }
 
     .portf {
-        height: 450px;
+        height: 425px;
     }
 
     .web-large {
-        background-size: 375px 450px;
+        background-size: 375px 400px;
         font-size: .6em;
     }
     
     .web-1, .web-2, .web-3, .web-4 {
         background-size: 175px 175px;
         font-size: .5em;
+    }
+
+    .contact1 a {
+        font-size: .75em;
     }
 }
 
@@ -304,7 +297,7 @@ footer p {
     }
 
     .web-large {
-        background-size: 175px 250px;
+        background-size: 275px 250px;
         font-size: .5em;
     }
     
@@ -317,13 +310,14 @@ footer p {
 /* Media Queries Screen */
 @media screen and (max-width: 320px){
     .title {
-        font-size: .7em;
+        font-size: 1.50em;
     }
     .nav-container {
         flex-direction: column;
+       
     }
     .navbar {
-        font-size: .4em;
+        font-size: .5em;
     }
 
     .portf {
@@ -331,12 +325,12 @@ footer p {
     }
 
     .web-large {
-        background-size: 200px 100px;
+        background-size: 210px 200px;
         font-size: .4em;
     }
     
     .web-1, .web-2, .web-3, .web-4 {
-        background-size: 75px 75px;
+        background-size: 85px 85px;
         font-size: .3em;
     }
 
