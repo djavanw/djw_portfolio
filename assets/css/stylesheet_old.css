@@ -1,0 +1,686 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    font-size: 4vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5px;
+    background-color: gray;
+}
+
+h2 {
+    font-size: .80em;
+}
+
+p {
+    font-size: .40em;
+}
+
+.head-container {
+    display: flex;
+    background-color: aqua;
+    /* height: 100px; */
+    flex-direction: column;
+}
+
+.title {
+    flex: 1 1 40%;
+    /* background-color: blue; */
+    align-self: center;
+    padding: 10px;
+    font-size: 1.15em;
+        
+}
+
+.nav-container {
+    flex: 1 1 60%;
+    /* background-color: burlywood; */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .6em;
+}
+
+.nav-container .navbar {
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    /* background-color: chartreuse; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+sect1, sect2, sect3 {
+    flex:  1; /* This is not needed or just section*/
+}
+
+.about1 {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    /* max-height: 400px; */ /* Use this for the 960 view*/
+}
+
+.blueshirt {
+    /* height: 400px; */
+    /* padding: 10px; */
+    padding: 10px;
+    flex-grow: .5;
+    flex-shrink: .25;
+    /* min-width: 0; */
+    flex-basis: 50%;
+}
+
+.split {
+    /* display: flex; */
+    /* flex-direction: column; */
+    color: white;
+    flex-basis: 50%;
+}
+
+.split h2 {
+    /* background-color: blueviolet; */
+    flex: 1 1 1;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.split p {
+    /* background-color: coral; */
+    flex: 1 1 1;
+    padding: 10px;
+    text-align: justify;
+    /* font-size: .70rem; */
+}
+
+/* This is the start of the Works area of the Page */
+
+.works1 {
+    display: flex;
+    flex-direction: column;
+    /* max-height: 650px; */
+    background-color: pink;
+}
+
+.works1 h2 {
+    text-align: center;
+    /* flex: 1 1 10%; */
+    padding: 10px;
+}
+
+/* This area is for the large portfolio photo */
+
+.ports {
+    /* flex: 1 1 90%; */
+    background-color: rgb(22, 0, 100);
+    display: flex;    /*You must keep this flex */
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* height: 500px;  */ /* Use this at 960px  */
+}
+
+.fig-large {
+    flex: 1;
+}
+
+/* .link1-waslink1 {
+    padding: 10px;
+    flex-grow: .5;
+    flex-shrink: .25;
+    min-width: 0;
+    flex-basis: 50%; */
+    /* flex: 3 1 50%;} */
+
+.link1 {
+display: flex;
+flex-direction: column;
+}
+
+.link1 .ports-large {
+    flex: 1;
+}
+
+ /* Not used any more */
+/* .large { */
+    /* flex: 1 1 auto; */
+    /* background-color: darkmagenta; */
+    /* display: flex; */
+    /* padding: 10px;
+    flex-wrap: wrap;
+} */
+
+/* .large img {
+    height: 200px;
+    flex: 1 90 200%;
+    min-height: 0;
+} */
+ /* Not used any more */
+
+
+/* This area is for the small photos */
+
+.small {
+    /* flex: 1 1 auto; */
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* height: 100px;
+    width: 50px; */
+}
+
+.fig-small {
+    flex:1;
+}
+
+.link2 {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+
+    width: 200px;
+}
+
+.link2 .small-img {
+    padding: 10px;
+    flex-grow: .5;
+    flex-shrink: 2;
+    min-width: 250px;
+    flex-basis: 50%;
+}
+
+/* .small .small-img {
+    padding: 10px;
+    flex-grow: .5;
+    flex-shrink: .25;
+    min-width: 0;
+    flex-basis: 50%; */
+    /* height: 175px; */
+    /* background-color: darkturquoise; */
+     /* flex: .5 .25 50%; */
+   /* flex-shrink: 5;
+    flex-grow: 1;
+    flex-basis: 100px;} */
+
+
+/* This is the contact area of the page */
+.contact1 {
+    display: flex;
+    height: 175px;
+    flex-direction: column;
+    background-color: darkturquoise;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.contact1 p {
+    font-size: .90em;
+    text-align: center;
+}
+
+
+
+footer p {
+    font-size: .65em;
+    text-align: right;
+}
+
+
+/* Media Queries */
+
+
+
+
+
+/* @media screen and (min-width: 768px) {
+    body {
+        background-color: orange;
+    }
+} */
+
+@media (min-width:320px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media (min-width: 550px) {
+    body {
+        background-color: yellow;
+    }
+    h2 {
+        font-size: 1.0em;
+    }
+    p {
+        font-size: .50em;
+    }
+
+    .nav-container {
+        font-size: .75em;
+    }
+
+    .link2 {
+        width: 275px;
+    }
+
+    .link2 .small-ing {
+        min-width: 300px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    body {
+        background-color: rebeccapurple;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .head-container {
+        display: flex;
+        background-color: aqua;
+        flex-direction: row;
+        height: 100px;
+    }
+
+    .title {
+        flex: 1 1 40%;
+        /* background-color: blue; */
+        align-self: center;
+        padding: 10px;
+        font-size: 1.50em;
+    }
+    
+    .nav-container {
+        flex: 1 1 60%;
+        /* background-color: burlywood; */
+        display: flex;
+        align-items: center;
+        font-size: 1.1em;
+    }
+    
+    .nav-container .navbar {
+        text-decoration: none;
+        flex: 1;
+        /* background-color: chartreuse; */
+    }
+
+    main {
+        /* display: flex;
+        flex-direction: column; */
+    }
+        
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about1 {
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        max-height: 400px;
+        
+    }
+
+    .blueshirt {
+        /* height: 400px; */
+        padding: 10px;
+        flex-grow: .25;
+        flex-shrink: .1;
+        min-width: 0;
+        flex-basis: 40%;
+    }
+    
+    .split {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        flex-basis: 60%;
+    }
+    
+    .split h2 {
+        /* background-color: blueviolet; */
+        flex: 2 1 0;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .split p {
+        /* background-color: coral; */
+        flex: 1 1 auto;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    
+    /* This is the start of the Works area of the Page */
+    
+    .works1 {
+        display: flex;
+        flex-direction: column;
+        /* height: 550px; */
+        background-color: pink;
+    }
+    
+    .works1 h2 {
+        text-align: center;
+        height: 150px;
+        /* flex: 1 1 10%; */
+        padding: 10px;
+        
+    }
+      
+    /* This area is for the large portfolio photo */
+
+    .ports {
+        /* flex: 1 1 90%; */
+        background-color: rgb(22, 0, 100);
+        display: flex;    /*  You must keep this flex */
+        flex-direction: row;
+        justify-content: space-between;
+        height: 600px;
+    } 
+    
+        
+    .ports-large {
+        height: 500px;
+        padding: 10px;
+        /* flex-grow: .5;
+        flex-shrink: .25;
+        min-width: 0;
+        flex-basis: 50%; */
+        flex: 3 1 40%;
+    }
+
+    /* This area is for the small photos */
+
+    .small {
+        flex: 1 1 60%;
+        display: flex;
+        padding: 10px;
+        flex-wrap: wrap;
+        /* height: 400px; */
+        /* width: 50px;  */
+    }
+
+    /* .small figure {
+        flex: .5 0 12.5%;
+    } */
+
+    figure {
+        text-align: center;
+        color: white;
+    }
+
+    .small .small-img { 
+        height: 175px;
+        /* background-color: darkturquoise; */
+        flex: .5 0 12.5%;
+    /* flex-shrink: 5;
+        flex-grow: 1;
+        flex-basis: 100px; */
+    }
+
+    /* This is the contact area of the page */
+    .contact1 {
+        display: flex;
+        height: 175px;
+        flex-direction: column;
+        background-color: darkturquoise;
+        text-align: center;
+    }
+
+    .contact1 p {
+        font-size: .90em;
+    }
+
+    footer p {
+        font-size: .65em;
+        text-align: right;
+    }
+
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .top-container {
+    background-color: rgb(236, 9, 236); This is bg-color for header */
+    /* display: flex;
+    justify-content: space-between;
+    padding: .50rem;
+    height: 200px;
+    align-items: center;
+    width: 100%;
+        
+} */
+
+/* .title {
+    color: turquoise;
+    background-color: tomato;
+    /* height: 150px; */
+    /* flex: 1 0 10rem; */
+    /* justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+} */
+
+/* .nav-wrapper {                /* Nav bar styling*/
+    /*display: flex;
+    background-color: red;
+    height: 150px;
+    flex: 1 0 40rem;
+    align-items: center;
+    padding: 1rem;
+    
+} */
+/* .nbar {                      /* Nav bar anchor styling*/
+    /*color: blue;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    text-decoration: none;
+    font-size: 2rem;
+} */
+
+/* main {
+    background-color: royalblue;
+    height: 700px;
+} */
+
+/* Fixed the Parent/Child Flexbox */
+/* section {
+    display: flex;
+    flex-direction: column;
+} */
+/* 
+article {
+    background-color: springgreen;
+    margin: 10px;
+    padding: 10px;
+} */
+
+/* .figwrapper {
+    display: flex;
+    height: 310px;
+} */
+/* 
+.photo img {
+    height: 300px;
+    
+} */
+
+/* .split {
+    display: flex;
+    flex-direction: row;
+    height: 310px;
+} */
+/* 
+.split h2 p {
+    
+} */
+
+
+
+/* .photo, #about h2, #about p {
+    display: inline-flex;
+    align-items: center;
+    background-color: blue;
+    flex-direction: column;
+} */
+
+/* .about1 {
+    background-color: saddlebrown;
+    display: flex;
+    height: 22rem;
+    min-width: 33.3%;
+    
+} */
+
+/* .photo {
+    display: flex; */
+    /* width: 15%; */
+    /* height: 350px; */
+    /* background-color: darkslateblue;
+} */
+/* .photo img {
+    /* min-width: 18rem; */
+    /*padding: .50rem; */
+    /* min-width: 33.3%; */
+    /* height: 22rem; */
+    /* background-color:black ;
+} */
+
+/* .split {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 53%;
+    background-color: rgb(196, 28, 28);
+} */
+
+/* .split h2 {
+    background-color: blue;
+    height: 50px;
+    padding: .50rem;
+    text-align: center; */
+    
+    /* flex-shrink: 2;
+    flex-basis: 20%;} */
+    
+
+
+/* .split p {
+    background-color: cornflowerblue;
+    height: 300px;
+    padding: .50rem;
+    /* flex-shrink: 2;
+    flex-basis: 60%;} */
+ 
+
+/* h2, p {
+    columns: black;
+} */
+
+/* article {
+   display: flex;
+   
+} */
+
+
+
+/* #works {
+    background-color: seagreen;
+}
+
+#contact {
+    background-color: slategrey;
+}
+
+footer {
+    background-color: tan;
+} */
+/*
+.title {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    text-align: center; 
+    background-color: blue;
+    justify-items: center;
+    align-self: center;
+}
+
+nav {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    background-color: blueviolet;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+}
+ */
+
+
+    /* outline: 1px solid rgba(12, 81, 231, 0.767); */
+
+
+/* h1 {
+    text-align: center;
+} */
+
+/* header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: chartreuse; 
+    font-size: 1.5rem;
+    outline: 1px solid rebeccapurple;
+    line-height: 3;
+} */
+
+
+
+
+/*   
+}
+.photo img {
+    max-height: 350px;
+    margin: 15px;
+}
+
+
+} */

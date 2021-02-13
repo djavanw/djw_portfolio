@@ -10,229 +10,220 @@ html {
 
 body {
     font-size: 4vh;
+    color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 5px;
-    background-color: gray;
+    background-color: rgb(204, 212, 221);
 }
 
 h2 {
-    font-size: .80em;
+    font-size: 1.75em;
+    background-color:lightsteelblue;
 }
 
 p {
     font-size: .40em;
 }
 
-.head-container {
+.top-container {
+    background-color: rgba(25,91,215,0.84);
     display: flex;
-    background-color: aqua;
-    /* height: 100px; */
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-
+ 
 .title {
-    flex: 1 1 40%;
-    /* background-color: blue; */
+    /* background-color: lime; */
+    flex: 1 1 50%;
     align-self: center;
     padding: 10px;
-    font-size: 1.15em;
-        
+    text-align: center;
+    font-size: 2.75em;
 }
 
 .nav-container {
-    flex: 1 1 60%;
-    /* background-color: burlywood; */
-    padding: 5px;
+    flex: 1 1 50%;
+    /* background-color: orchid; */
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    font-size: .6em;
+    padding: 10px;
+    font-size: 1.50em;
+    flex-direction: row;
 }
 
-.nav-container .navbar {
-    text-decoration: none;
-    flex: 1;
+.navbar {
+    /* background-color: magenta; */
+    flex: 1 1 33.3%;
     text-align: center;
-    /* background-color: chartreuse; */
+    text-decoration: none;
+     
 }
 
-main {
+/* main {
     display: flex;
-    flex-direction: column;
-}
+} */
 
-sect1, sect2, sect3 {
-    flex:  1; /* This is not needed or just section*/
-}
-
-.about1 {
+/* .sect1 {
     display: flex;
-    flex-direction: column;
-    background-color: black;
-    /* max-height: 400px; */ /* Use this for the 960 view*/
+    
+} */
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .blueshirt {
-    /* height: 400px; */
-    /* padding: 10px; */
+    /* flex: 1 1 200px; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px;
+    max-width: 400px;
+    align-self: center;
     padding: 10px;
-    flex-grow: .5;
-    flex-shrink: .25;
-    /* min-width: 0; */
-    flex-basis: 50%;
+    background-color: green;
+    
 }
 
 .split {
-    /* display: flex; */
-    /* flex-direction: column; */
-    color: white;
-    flex-basis: 50%;
+   flex: 1 1 50px;
+   display: flex; 
+   flex-direction: column;
+   
 }
 
 .split h2 {
-    /* background-color: blueviolet; */
-    flex: 1 1 1;
-    align-items: center;
+    flex: 1 1 25px;
     text-align: center;
-    padding: 10px;
 }
 
 .split p {
-    /* background-color: coral; */
-    flex: 1 1 1;
-    padding: 10px;
+    flex: 1 1 500px;
+    font-size: .70em;
     text-align: justify;
-    /* font-size: .70rem; */
+    
 }
 
-/* This is the start of the Works area of the Page */
+/* .sect2 {
+    display: flex;
+    flex-direction: column;
+} */
 
 .works1 {
     display: flex;
     flex-direction: column;
-    /* max-height: 650px; */
-    background-color: pink;
+    /* background-color: violet; */
+    
 }
-
 .works1 h2 {
+    flex: 1 1 10%;
     text-align: center;
-    /* flex: 1 1 10%; */
-    padding: 10px;
+    
 }
 
-/* This area is for the large portfolio photo */
-
-.ports {
-    /* flex: 1 1 90%; */
-    background-color: rgb(22, 0, 100);
-    display: flex;    /*You must keep this flex */
-    flex-direction: column;
-    /* justify-content: space-between; */
-    /* height: 500px;  */ /* Use this at 960px  */
-}
-
-.fig-large {
-    flex: 1;
-}
-
-/* .link1-waslink1 {
-    padding: 10px;
-    flex-grow: .5;
-    flex-shrink: .25;
-    min-width: 0;
-    flex-basis: 50%; */
-    /* flex: 3 1 50%;} */
-
-.link1 {
-display: flex;
-flex-direction: column;
-}
-
-.link1 .ports-large {
-    flex: 1;
-}
-
- /* Not used any more */
-/* .large { */
-    /* flex: 1 1 auto; */
-    /* background-color: darkmagenta; */
-    /* display: flex; */
-    /* padding: 10px;
-    flex-wrap: wrap;
-} */
-
-/* .large img {
-    height: 200px;
-    flex: 1 90 200%;
-    min-height: 0;
-} */
- /* Not used any more */
-
-
-/* This area is for the small photos */
-
-.small {
-    /* flex: 1 1 auto; */
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    /* height: 100px;
-    width: 50px; */
-}
-
-.fig-small {
-    flex:1;
-}
-
-.link2 {
+.portf {
+    flex: 1 1 100%;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    height: 600px;
+        
+}   
 
-    width: 200px;
+.portf .web-large {
+    flex: 1 1 100%;
+    align-items: flex-start;
+    /* height: 500px; */
+    /* height: 700px; */
 }
 
-.link2 .small-img {
-    padding: 10px;
-    flex-grow: .5;
-    flex-shrink: 2;
-    min-width: 250px;
-    flex-basis: 50%;
+.portf .web-1 {
+    flex: 1 1 100%;
 }
 
-/* .small .small-img {
-    padding: 10px;
-    flex-grow: .5;
-    flex-shrink: .25;
-    min-width: 0;
-    flex-basis: 50%; */
-    /* height: 175px; */
-    /* background-color: darkturquoise; */
-     /* flex: .5 .25 50%; */
-   /* flex-shrink: 5;
-    flex-grow: 1;
-    flex-basis: 100px;} */
+.portf .web-2 {
+    flex: 1 1 100%;
+}
 
+.portf .web-3 {
+    flex: 1 1 100%;
+}
 
-/* This is the contact area of the page */
+.portf .web-4 {
+    flex: 1 1 100%;
+}
+
+/********* Works styling for the photos  *****/
+.web-large {
+    margin: 5px;
+    background: url(/assets/images/obi-onyeador-xA1l7OCKL4Q-unsplash_small3.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px 600px;
+    text-decoration: none;
+    color: black;
+}
+
+.link1 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+figure a:visited {
+    text-decoration: none;
+}
+
+.web-1 {
+    margin: 5px;
+    background: url(/assets/images/heylagostechie-YgOCJz9uGMk-unsplash_small2.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    text-decoration: none;
+    color: white;
+}
+
+.web-2 {
+    margin: 5px;
+    background: url(/assets/images/joan-gamell-ZS67i1HLllo-unsplash_large.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    text-decoration: none;
+    color: white;
+}
+
+.web-3 {
+    margin: 5px;
+    background: url(/assets/images/sigmund-wWpsETBAY_U-unsplash_small4.jpg);
+    background-repeat:no-repeat;
+    background-size: 400px 400px;
+    text-decoration: none;
+    color: white;
+}
+
+.web-4 {
+    margin: 5px;
+    background: url(/assets/images/michael-dziedzic--Rc6usOigMk-unsplash_small4a.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    text-decoration: none;
+    color: white;
+}
+
 .contact1 {
     display: flex;
     height: 175px;
     flex-direction: column;
-    background-color: darkturquoise;
     text-align: center;
-    justify-content: center;
-}
-
-
-.contact1 p {
     font-size: .90em;
-    text-align: center;
 }
 
-
+.contact1 h2 a {
+    flex: 1 1 100%;
+    
+}
 
 footer p {
     font-size: .65em;
@@ -240,447 +231,123 @@ footer p {
 }
 
 
-/* Media Queries */
-
-
-
-
-
-/* @media screen and (min-width: 768px) {
-    body {
-        background-color: orange;
+/* Media Queries ***********************************/
+/* Media Queries Large Screen*/
+@media screen and (max-width: 992px){
+    .title {
+        font-size: 2.25em;
     }
-} */
+    .navbar {
+        font-size: 1.25em;
+    }
 
-@media (min-width:320px) {
-    body {
-        background-color: green;
+    .aboutme {
+        flex-direction: column;
+    }
+
+    .split p {
+        font-size: .65em;
+    }
+
+    .portf {
+        height: 500px;
+    }
+
+    .web-large {
+        background-size: 400px 500px;
+        font-size: .7em;
+    }
+    
+    .web-1, .web-2, .web-3, .web-4 {
+        background-size: 275px 275px;
+        font-size: .6em;
+    }
+
+
+}
+
+/* Media Queries Medium Screen */
+@media screen and (max-width: 768px){
+    .title {
+        font-size: 1.75em;
+    }
+    .navbar {
+        font-size: .95em;
+    }
+
+    .portf {
+        height: 450px;
+    }
+
+    .web-large {
+        background-size: 375px 450px;
+        font-size: .6em;
+    }
+    
+    .web-1, .web-2, .web-3, .web-4 {
+        background-size: 175px 175px;
+        font-size: .5em;
     }
 }
 
-@media (min-width: 550px) {
-    body {
-        background-color: yellow;
+/* Media Queries Medium-Small Screen */
+@media screen and (max-width: 576px){
+    .title {
+        font-size: 1.45em;
     }
-    h2 {
-        font-size: 1.0em;
-    }
-    p {
-        font-size: .50em;
-    }
-
-    .nav-container {
+    .navbar {
         font-size: .75em;
     }
 
-    .link2 {
-        width: 275px;
+    .portf {
+        height: 250px;
     }
 
-    .link2 .small-ing {
-        min-width: 300px;
+    .web-large {
+        background-size: 175px 250px;
+        font-size: .5em;
     }
-
+    
+    .web-1, .web-2, .web-3, .web-4 {
+        background-size: 120px 120px;
+        font-size: .4em;
+    }
 }
 
-@media (min-width: 992px) {
-    body {
-        background-color: rebeccapurple;
-        margin: 20px;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    .head-container {
-        display: flex;
-        background-color: aqua;
-        flex-direction: row;
-        height: 100px;
-    }
-
+/* Media Queries Screen */
+@media screen and (max-width: 320px){
     .title {
-        flex: 1 1 40%;
-        /* background-color: blue; */
-        align-self: center;
-        padding: 10px;
-        font-size: 1.50em;
+        font-size: .7em;
     }
-    
     .nav-container {
-        flex: 1 1 60%;
-        /* background-color: burlywood; */
-        display: flex;
-        align-items: center;
-        font-size: 1.1em;
-    }
-    
-    .nav-container .navbar {
-        text-decoration: none;
-        flex: 1;
-        /* background-color: chartreuse; */
-    }
-
-    main {
-        /* display: flex;
-        flex-direction: column; */
-    }
-        
-    section {
-        display: flex;
         flex-direction: column;
     }
-    
-    .about1 {
-        display: flex;
-        flex-direction: row;
-        background-color: black;
-        max-height: 400px;
-        
+    .navbar {
+        font-size: .4em;
     }
 
-    .blueshirt {
-        /* height: 400px; */
-        padding: 10px;
-        flex-grow: .25;
-        flex-shrink: .1;
-        min-width: 0;
-        flex-basis: 40%;
-    }
-    
-    .split {
-        display: flex;
-        flex-direction: column;
-        color: white;
-        flex-basis: 60%;
-    }
-    
-    .split h2 {
-        /* background-color: blueviolet; */
-        flex: 2 1 0;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    .split p {
-        /* background-color: coral; */
-        flex: 1 1 auto;
-        padding: 10px;
-        font-size: 1.5rem;
-    }
-    
-    /* This is the start of the Works area of the Page */
-    
-    .works1 {
-        display: flex;
-        flex-direction: column;
-        /* height: 550px; */
-        background-color: pink;
-    }
-    
-    .works1 h2 {
-        text-align: center;
-        height: 150px;
-        /* flex: 1 1 10%; */
-        padding: 10px;
-        
-    }
-      
-    /* This area is for the large portfolio photo */
-
-    .ports {
-        /* flex: 1 1 90%; */
-        background-color: rgb(22, 0, 100);
-        display: flex;    /*  You must keep this flex */
-        flex-direction: row;
-        justify-content: space-between;
-        height: 600px;
-    } 
-    
-        
-    .ports-large {
-        height: 500px;
-        padding: 10px;
-        /* flex-grow: .5;
-        flex-shrink: .25;
-        min-width: 0;
-        flex-basis: 50%; */
-        flex: 3 1 40%;
+    .portf {
+        height: 200px;
     }
 
-    /* This area is for the small photos */
-
-    .small {
-        flex: 1 1 60%;
-        display: flex;
-        padding: 10px;
-        flex-wrap: wrap;
-        /* height: 400px; */
-        /* width: 50px;  */
+    .web-large {
+        background-size: 200px 100px;
+        font-size: .4em;
+    }
+    
+    .web-1, .web-2, .web-3, .web-4 {
+        background-size: 75px 75px;
+        font-size: .3em;
     }
 
-    /* .small figure {
-        flex: .5 0 12.5%;
-    } */
-
-    figure {
-        text-align: center;
-        color: white;
-    }
-
-    .small .small-img { 
-        height: 175px;
-        /* background-color: darkturquoise; */
-        flex: .5 0 12.5%;
-    /* flex-shrink: 5;
-        flex-grow: 1;
-        flex-basis: 100px; */
-    }
-
-    /* This is the contact area of the page */
     .contact1 {
-        display: flex;
-        height: 175px;
-        flex-direction: column;
-        background-color: darkturquoise;
-        text-align: center;
+        flex: 1 1 .50em;
     }
 
-    .contact1 p {
-        font-size: .90em;
-    }
-
-    footer p {
-        font-size: .65em;
-        text-align: right;
-    }
-
-    } 
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* .top-container {
-    background-color: rgb(236, 9, 236); This is bg-color for header */
-    /* display: flex;
-    justify-content: space-between;
-    padding: .50rem;
-    height: 200px;
-    align-items: center;
-    width: 100%;
-        
-} */
-
-/* .title {
-    color: turquoise;
-    background-color: tomato;
-    /* height: 150px; */
-    /* flex: 1 0 10rem; */
-    /* justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    
-} */
-
-/* .nav-wrapper {                /* Nav bar styling*/
-    /*display: flex;
-    background-color: red;
-    height: 150px;
-    flex: 1 0 40rem;
-    align-items: center;
-    padding: 1rem;
-    
-} */
-/* .nbar {                      /* Nav bar anchor styling*/
-    /*color: blue;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
-    text-decoration: none;
-    font-size: 2rem;
-} */
-
-/* main {
-    background-color: royalblue;
-    height: 700px;
-} */
-
-/* Fixed the Parent/Child Flexbox */
-/* section {
-    display: flex;
-    flex-direction: column;
-} */
-/* 
-article {
-    background-color: springgreen;
-    margin: 10px;
-    padding: 10px;
-} */
-
-/* .figwrapper {
-    display: flex;
-    height: 310px;
-} */
-/* 
-.photo img {
-    height: 300px;
-    
-} */
-
-/* .split {
-    display: flex;
-    flex-direction: row;
-    height: 310px;
-} */
-/* 
-.split h2 p {
-    
-} */
-
-
-
-/* .photo, #about h2, #about p {
-    display: inline-flex;
-    align-items: center;
-    background-color: blue;
-    flex-direction: column;
-} */
-
-/* .about1 {
-    background-color: saddlebrown;
-    display: flex;
-    height: 22rem;
-    min-width: 33.3%;
-    
-} */
-
-/* .photo {
-    display: flex; */
-    /* width: 15%; */
-    /* height: 350px; */
-    /* background-color: darkslateblue;
-} */
-/* .photo img {
-    /* min-width: 18rem; */
-    /*padding: .50rem; */
-    /* min-width: 33.3%; */
-    /* height: 22rem; */
-    /* background-color:black ;
-} */
-
-/* .split {
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-    width: 53%;
-    background-color: rgb(196, 28, 28);
-} */
-
-/* .split h2 {
-    background-color: blue;
-    height: 50px;
-    padding: .50rem;
-    text-align: center; */
-    
-    /* flex-shrink: 2;
-    flex-basis: 20%;} */
-    
-
-
-/* .split p {
-    background-color: cornflowerblue;
-    height: 300px;
-    padding: .50rem;
-    /* flex-shrink: 2;
-    flex-basis: 60%;} */
- 
-
-/* h2, p {
-    columns: black;
-} */
-
-/* article {
-   display: flex;
-   
-} */
-
-
-
-/* #works {
-    background-color: seagreen;
 }
-
-#contact {
-    background-color: slategrey;
-}
-
-footer {
-    background-color: tan;
-} */
-/*
-.title {
-    grid-column: 1;
-    grid-row: 1 / span 3;
-    text-align: center; 
-    background-color: blue;
-    justify-items: center;
-    align-self: center;
-}
-
-nav {
-    grid-column: 3;
-    grid-row: 1 / span 2;
-    background-color: blueviolet;
-    flex-direction: row;
-}
-
-.container {
-    display: flex;
-}
- */
-
-
-    /* outline: 1px solid rgba(12, 81, 231, 0.767); */
-
-
-/* h1 {
-    text-align: center;
-} */
-
-/* header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    background-color: chartreuse; 
-    font-size: 1.5rem;
-    outline: 1px solid rebeccapurple;
-    line-height: 3;
-} */
-
-
-
-
-/*   
-}
-.photo img {
-    max-height: 350px;
-    margin: 15px;
-}
-
-
-} */
