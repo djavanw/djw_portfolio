@@ -144,31 +144,31 @@ a:hover {
 
 /**** Works styling and linking for the photos  ****/
 .web-large {
-    background: url(/assets/images/obi-onyeador-xA1l7OCKL4Q-unsplash_small3.jpg);
+    background: url(./assets/images/obi-onyeador-xA1l7OCKL4Q-unsplash_small3.jpg);
     background-size: 400px 600px;
     /* Photo by Obi Onyeador from Unsplashed.com [10 Feb 21] */
 }
 
 .web-1 {
-    background: url(/assets/images/heylagostechie-YgOCJz9uGMk-unsplash_small2.jpg);
+    background: url(./assets/images/heylagostechie-YgOCJz9uGMk-unsplash_small2.jpg);
     background-size: 400px 400px;
     /* Photo by heylagostechie from Unsplashed.com [10 Feb 21] */
 }
 
 .web-2 {
-    background: url(/assets/images/joan-gamell-ZS67i1HLllo-unsplash_large.jpg);
+    background: url(./assets/images/joan-gamell-ZS67i1HLllo-unsplash_large.jpg);
     background-size: 400px 400px;
     /* Photo by Joan Gamell from Unsplashed.com [10 Feb 21] */
 }
 
 .web-3 {
-    background: url(/assets/images/sigmund-wWpsETBAY_U-unsplash_small4.jpg);
+    background: url(./assets/images/sigmund-wWpsETBAY_U-unsplash_small4.jpg);
     background-size: 400px 400px;
     /* Photo by Sigmund from Unsplashed.com [10 Feb 21] */
 }
 
 .web-4 {
-    background: url(/assets/images/michael-dziedzic--Rc6usOigMk-unsplash_small4a.jpg);
+    background: url(./assets/images/michael-dziedzic--Rc6usOigMk-unsplash_small4a.jpg);
     background-size: 400px 400px;
     /* Photo by Michael Dziedzic from Unsplashed.com [10 Feb 21] */
 }
