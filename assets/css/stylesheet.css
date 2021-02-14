@@ -16,20 +16,28 @@ body {
     background-color: white;
 }
 
+/**** Default style to reference in the page ****/
 h2 {
     font-size: 1.75em;
     background-color:lightsteelblue;
 }
 
+/**** Global Link page styling ****/
+a:hover {
+    color: white;
+    transition: .8s;
+    text-decoration: underline;
+}
+
+/**** Header styling of page (Title and Nav bar) ****/
 .top-container {
     background-color: rgba(25,91,215,0.84);
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /*Keeps Title and Nav bar on same line with large screen*/
     flex-wrap: wrap;
 }
  
 .title {
-    /* background-color: lime; */
     flex: 1 1 50%;
     align-self: center;
     padding: 10px;
@@ -39,7 +47,6 @@ h2 {
 
 .nav-container {
     flex: 1 1 50%;
-    /* background-color: orchid; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -50,44 +57,30 @@ h2 {
 }
 
 .navbar {
-    /* background-color: magenta; */
     flex: 1 1 33.3%;
     text-align: center;
-    text-decoration: none;
+    color: blue;
 }
 
-/* main {
-    display: flex;
-} */
-
-/* .sect1 {
-    display: flex;
-    
-} */
-
+/**** Styling for the About Me area and photo ****/
 .aboutme {
     display: flex;
     flex-direction: row;
     background-color: lightskyblue;
 }
 
-.blueshirt {
-    /* flex: 1 1 200px; */
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 100px;
+.blueshirt {      /* Main photo in about me area */
+    flex: 1 1 100px;
     max-width: 400px;
     align-self: center;
     padding: 10px;
     background-color: lightskyblue;
-    
 }
 
-.split {
+.split {          /* This area is split to change layout from row to column */
    flex: 1 1 50px;
    display: flex; 
    flex-direction: column;
-   
 }
 
 .split h2 {
@@ -106,21 +99,15 @@ h2 {
         
 }
 
-/* .sect2 {
-    display: flex;
-    flex-direction: column;
-} */
-
+/**** This styling is for the Works area of page ****/
 .works1 {
     display: flex;
     flex-direction: column;
-    /* background-color: violet; */
-    
+
 }
 .works1 h2 {
     flex: 1 1 10%;
     text-align: center;
-    
 }
 
 /***** Portfolio responsiveness styling area *****/
@@ -133,11 +120,10 @@ h2 {
     height: 625px;
 }   
 
-.portf .web-large {
+.portf .web-large {   /* This references the large photo in the portfolio  */
     flex: 1 1 100%;
     align-items: flex-start;
-    /* height: 500px; */
-    /* height: 700px; */
+    font-weight: bold;
 }
 
 .portf .web-1 {
@@ -156,51 +142,48 @@ h2 {
     flex: 1 1 100%;
 }
 
-/**** Works styling for the photos  ****/
+/**** Works styling and linking for the photos  ****/
 .web-large {
     background: url(/assets/images/obi-onyeador-xA1l7OCKL4Q-unsplash_small3.jpg);
     background-size: 400px 600px;
-}
-
-.link1 a:link {
-    color: white;
-    text-decoration: none;
-}
-
-figure a:visited {
-    text-decoration: none;
+    /* Photo by Obi Onyeador from Unsplashed.com [10 Feb 21] */
 }
 
 .web-1 {
     background: url(/assets/images/heylagostechie-YgOCJz9uGMk-unsplash_small2.jpg);
     background-size: 400px 400px;
+    /* Photo by heylagostechie from Unsplashed.com [10 Feb 21] */
 }
 
 .web-2 {
     background: url(/assets/images/joan-gamell-ZS67i1HLllo-unsplash_large.jpg);
     background-size: 400px 400px;
+    /* Photo by Joan Gamell from Unsplashed.com [10 Feb 21] */
 }
 
 .web-3 {
     background: url(/assets/images/sigmund-wWpsETBAY_U-unsplash_small4.jpg);
     background-size: 400px 400px;
+    /* Photo by Sigmund from Unsplashed.com [10 Feb 21] */
 }
 
 .web-4 {
-    margin: 5px;
     background: url(/assets/images/michael-dziedzic--Rc6usOigMk-unsplash_small4a.jpg);
     background-size: 400px 400px;
+    /* Photo by Michael Dziedzic from Unsplashed.com [10 Feb 21] */
 }
 
 /**** Addition styling to all portfolio photos ****/
 .web-large, .web-1, .web-2, .web-3, .web-4 {
     margin: 5px;
+    border-radius: 1em;
     background-repeat: no-repeat;
     text-decoration: none;
     text-align: center;
     color: red;
 }
 
+/**** Styling for Contact area ****/
 .contact1 {
     display: flex;
     height: 175px;
@@ -208,10 +191,14 @@ figure a:visited {
     text-align: center;
     /* font-size: .70em; */
 }
-/**** Styling for Contact area ****/
+
+.contact1 a:hover {
+    color: red;
+    transition: .8s;
+}
+
 .contact1 a {
-    /* flex: 1 1 100%; */
-    font-size: .95em;
+       font-size: .95em;
 }
 
 /**** Styling for Footer area ****/
@@ -219,7 +206,6 @@ footer p {
     font-size: .55em;
     text-align: right;
 }
-
 
 /**** Media Queries ****/
 /**** Media Queries Large Screen ****/
@@ -260,6 +246,7 @@ footer p {
     .title {
         font-size: 1.75em;
     }
+
     .navbar {
         font-size: .95em;
     }
@@ -288,6 +275,7 @@ footer p {
     .title {
         font-size: 1.45em;
     }
+
     .navbar {
         font-size: .75em;
     }
@@ -307,14 +295,15 @@ footer p {
     }
 }
 
-/* Media Queries Screen */
+/* Media Queries Small Screen */
 @media screen and (max-width: 320px){
     .title {
         font-size: 1.50em;
     }
+
     .nav-container {
         flex-direction: column;
-       
+      
     }
     .navbar {
         font-size: .5em;
@@ -337,11 +326,4 @@ footer p {
     .contact1 {
         flex: 1 1 .50em;
     }
-
-
-
-
-
-
-
 }
