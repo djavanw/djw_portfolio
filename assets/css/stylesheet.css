@@ -198,8 +198,20 @@ a:hover {
     transition: .8s;
 }
 
-.contact1 a {
-       font-size: .95em;
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.info a {
+    flex: 1 1 100%;
+    align-self: center;
+    margin: 35px;
+    font-size: .95em;
+    
 }
 
 /**** Styling for Footer area ****/
@@ -266,7 +278,7 @@ footer p {
         font-size: .5em;
     }
 
-    .contact1 a {
+    .info a {
         font-size: .75em;
     }
 }
@@ -293,6 +305,14 @@ footer p {
     .web-1, .web-2, .web-3, .web-4 {
         background-size: 120px 120px;
         font-size: .4em;
+    }
+
+    .contact1 {
+        height: 250px;
+    }
+
+    .info {
+        flex-direction: column;
     }
 }
 
@@ -325,6 +345,14 @@ footer p {
     }
 
     .contact1 {
+        height: 250px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .info a {
         flex: 1 1 .50em;
     }
 }
