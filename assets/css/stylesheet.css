@@ -97,7 +97,6 @@ a:hover {
     background-color: white;
     border: 15px solid lightskyblue;
     padding: 15px;
-        
 }
 
 /**** This styling is for the Works area of page ****/
@@ -113,71 +112,83 @@ a:hover {
 
 /***** Portfolio responsiveness styling area *****/
 .portf {
-    flex: 1 1 100%;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    height: 625px;
+    height: 800px;
 }   
+
+.portf-large {
+    display: flex;
+    height: 400px;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
 
 .portf .web-large {   /* This references the large photo in the portfolio  */
     flex: 1 1 100%;
-    align-items: flex-start;
+    width: 400px;
+    height: 400px;
     font-weight: bold;
 }
 
-.portf .web-1 {
+.portf-small {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+
+.portf-small .web-1 {
     flex: 1 1 100%;
 }
 
-.portf .web-2 {
+.portf-small .web-2 {
     flex: 1 1 100%;
 }
 
-.portf .web-3 {
+.portf-small .web-3 {
     flex: 1 1 100%;
 }
 
-.portf .web-4 {
+.portf-small .web-4 {
     flex: 1 1 100%;
 }
 
 /**** Works styling and linking for the photos  ****/
-.web-large {
+.portf-large .web-large {
     background: url(https://djavanw.github.io/djw_portfolio/assets/images/obi-onyeador-xA1l7OCKL4Q-unsplash_small3.jpg);
-    background-size: 400px 600px;
+    background-size: cover;
     /* Photo by Obi Onyeador from Unsplashed.com [10 Feb 21] */
 }
 
-.web-1 {
+.portf-small .web-1 {
     background: url(https://djavanw.github.io/djw_portfolio/assets/images/heylagostechie-YgOCJz9uGMk-unsplash_small2.jpg);
-    background-size: 400px 400px;
+    background-size: cover;
     /* Photo by heylagostechie from Unsplashed.com [10 Feb 21] */
 }
 
-.web-2 {
+.portf-small .web-2 {
     background: url(https://djavanw.github.io/djw_portfolio/assets/images/joan-gamell-ZS67i1HLllo-unsplash_large.jpg);
-    background-size: 400px 400px;
+    background-size: cover;
     /* Photo by Joan Gamell from Unsplashed.com [10 Feb 21] */
 }
 
-.web-3 {
+.portf-small .web-3 {
     background: url(https://djavanw.github.io/djw_portfolio/assets/images/sigmund-wWpsETBAY_U-unsplash_small4.jpg);
-    background-size: 400px 400px;
+    background-size: cover;
     /* Photo by Sigmund from Unsplashed.com [10 Feb 21] */
 }
 
-.web-4 {
+.portf-small .web-4 {
     background: url(https://djavanw.github.io/djw_portfolio/assets/images/michael-dziedzic--Rc6usOigMk-unsplash_small4a.jpg);
-    background-size: 400px 400px;
+    background-size: cover;
     /* Photo by Michael Dziedzic from Unsplashed.com [10 Feb 21] */
 }
 
 /**** Addition styling to all portfolio photos ****/
 .web-large, .web-1, .web-2, .web-3, .web-4 {
     margin: 5px;
-    border-radius: 1em;
+    border-radius: .5em;
     background-repeat: no-repeat;
     text-decoration: none;
     text-align: center;
@@ -190,7 +201,6 @@ a:hover {
     height: 175px;
     flex-direction: column;
     text-align: center;
-    /* font-size: .70em; */
 }
 
 .contact1 a:hover {
@@ -211,7 +221,6 @@ a:hover {
     align-self: center;
     margin: 35px;
     font-size: .95em;
-    
 }
 
 /**** Styling for Footer area ****/
@@ -239,18 +248,14 @@ footer p {
         flex: 1 1 300px;
     }
 
-    .portf {
-        height: 525px;
-    }
-
     .web-large {
-        background-size: 400px 500px;
-        font-size: .7em;
+        background-size: cover;
+        font-size: 1.25em;
     }
     
     .web-1, .web-2, .web-3, .web-4 {
-        background-size: 275px 275px;
-        font-size: .6em;
+        background-size: cover;
+        font-size: .9em;
     }
 }
 
@@ -264,18 +269,18 @@ footer p {
         font-size: .95em;
     }
 
-    .portf {
-        height: 425px;
-    }
-
     .web-large {
-        background-size: 375px 400px;
-        font-size: .6em;
+        background-size: 200px 200px;
+        font-size: .8em;
     }
     
+    .portf-small {
+        flex-direction: column;
+    }
+
     .web-1, .web-2, .web-3, .web-4 {
-        background-size: 175px 175px;
-        font-size: .5em;
+        background-size: 200px 200px;
+        font-size: .7em;
     }
 
     .info a {
@@ -293,18 +298,18 @@ footer p {
         font-size: .75em;
     }
 
-    .portf {
-        height: 250px;
-    }
-
     .web-large {
         background-size: 275px 250px;
-        font-size: .5em;
+        font-size: .7em;
+    }
+
+    .portf-small {
+        flex-direction: column;
     }
     
     .web-1, .web-2, .web-3, .web-4 {
         background-size: 120px 120px;
-        font-size: .4em;
+        font-size: .6em;
     }
 
     .contact1 {
@@ -330,22 +335,22 @@ footer p {
         font-size: .5em;
     }
 
-    .portf {
-        height: 200px;
-    }
-
     .web-large {
         background-size: 210px 200px;
-        font-size: .4em;
+        font-size: .5em;
     }
     
+    .portf-small {
+        flex-direction: column;
+    }
+
     .web-1, .web-2, .web-3, .web-4 {
         background-size: 85px 85px;
-        font-size: .3em;
+        font-size: .4em;
     }
 
     .contact1 {
-        height: 250px;
+        height: 275px;
     }
 
     .info {
