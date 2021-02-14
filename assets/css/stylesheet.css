@@ -60,6 +60,7 @@ a:hover {
     flex: 1 1 33.3%;
     text-align: center;
     color: blue;
+    text-decoration: none;
 }
 
 /**** Styling for the About Me area and photo ****/
