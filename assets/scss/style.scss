@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    font-size: 3vh;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5px;
+    background-color: white;
+}
+
+/**** Default style to reference in the page ****/
+h2 {
+    font-size: 1.75em;
+    background-color:lightsteelblue;
+}
+
+/**** Global Link page styling ****/
+a:hover {
+    color: white;
+    transition: .8s;
+    text-decoration: underline;
+}
+
+/**** Header styling of page (Title and Nav bar) ****/
+#daHero {
+    background-color: rgb(56, 56, 170);
+}
+
+
+
+/**** Styling for the About Me area and photo ****/
+#blueshirt {      /* Main photo in about me area */
+    max-width: 550px;
+    align-self: center;
+    padding: 10px;
+    background-color: lightskyblue;
+
+}
+/**** This styling is for the Works area of page ****/
+
+/***** Portfolio responsiveness styling area *****/
+.portf {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}   
+
+.portf-large {
+    display: flex;
+    height: 400px;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+
+.portf .web-large {   /* This references the large photo in the portfolio  */
+    flex: 1 1 100%;
+    width: 400px;
+    height: 400px;
+    font-weight: bold;
+}
+
+.portf-small {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+
+.portf-small .web-1 {
+    flex: 1 1 100%;
+}
+
+.portf-small .web-2 {
+    flex: 1 1 100%;
+}
+
+.portf-small .web-3 {
+    flex: 1 1 100%;
+}
+
+.portf-small .web-4 {
+    flex: 1 1 100%;
+}
+
+/**** Works styling and linking for the photos  ****/
+.portf-large .web-large {
+    background: url(https://djavanw.github.io/djw_portfolio/assets/images/obi-onyeador-xA1l7OCKL4Q-unsplash_small3.jpg);
+    background-size: cover;
+    /* Photo by Obi Onyeador from Unsplashed.com [10 Feb 21] */
+}
+
+.portf-small .web-1 {
+    background: url(https://djavanw.github.io/djw_portfolio/assets/images/heylagostechie-YgOCJz9uGMk-unsplash_small2.jpg);
+    background-size: cover;
+    /* Photo by heylagostechie from Unsplashed.com [10 Feb 21] */
+}
+
+.portf-small .web-2 {
+    background: url(https://djavanw.github.io/djw_portfolio/assets/images/joan-gamell-ZS67i1HLllo-unsplash_large.jpg);
+    background-size: cover;
+    /* Photo by Joan Gamell from Unsplashed.com [10 Feb 21] */
+}
+
+.portf-small .web-3 {
+    background: url(https://djavanw.github.io/djw_portfolio/assets/images/sigmund-wWpsETBAY_U-unsplash_small4.jpg);
+    background-size: cover;
+    /* Photo by Sigmund from Unsplashed.com [10 Feb 21] */
+}
+
+.portf-small .web-4 {
+    background: url(https://djavanw.github.io/djw_portfolio/assets/images/michael-dziedzic--Rc6usOigMk-unsplash_small4a.jpg);
+    background-size: cover;
+    /* Photo by Michael Dziedzic from Unsplashed.com [10 Feb 21] */
+}
+
+/**** Addition styling to all portfolio photos ****/
+.web-large, .web-1, .web-2, .web-3, .web-4 {
+    margin: 5px;
+    border-radius: .5em;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    text-align: center;
+    color: red;
+}
+
+/**** Styling for Contact area ****/
+.contact1 {
+    display: flex;
+    height: 175px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact1 a:hover {
+    color: red;
+    transition: .8s;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.info a {
+    flex: 1 1 100%;
+    align-self: center;
+    margin: 35px;
+    font-size: .95em;
+}
+
+/**** Styling for Footer area ****/
+footer p {
+    font-size: .55em;
+    text-align: right;
+}
+
+/**** Media Queries ****/
+/**** Media Queries Large Screen ****/
+@media screen and (max-width: 992px){
+    .title {
+        font-size: 2.25em;
+    }
+    .navbar {
+        font-size: 1.25em;
+    }
+
+    .aboutme {
+        flex-direction: column;
+    }
+
+    .split p {
+        font-size: .75em;
+        flex: 1 1 300px;
+    }
+
+    .web-large {
+        background-size: cover;
+        font-size: 1.25em;
+    }
+    
+    .web-1, .web-2, .web-3, .web-4 {
+        background-size: cover;
+        font-size: .9em;
+    }
+}
+
+/* Media Queries Medium Screen */
+@media screen and (max-width: 768px){
+    .title {
+        font-size: 1.75em;
+    }
+
+    .navbar {
+        font-size: .95em;
+    }
+
+    .web-large {
+        background-size: 200px 200px;
+        font-size: .8em;
+    }
+    
+    .portf-small {
+        flex-direction: column;
+    }
+
+    .web-1, .web-2, .web-3, .web-4 {
+        background-size: 200px 200px;
+        font-size: .7em;
+    }
+
+    .info a {
+        font-size: .75em;
+    }
+}
+
+/* Media Queries Medium-Small Screen */
+@media screen and (max-width: 576px){
+    .title {
+        font-size: 1.45em;
+    }
+
+    .navbar {
+        font-size: .75em;
+    }
+
+    .web-large {
+        background-size: 275px 250px;
+        font-size: .7em;
+    }
+
+    .portf-small {
+        flex-direction: column;
+    }
+    
+    .web-1, .web-2, .web-3, .web-4 {
+        background-size: 120px 120px;
+        font-size: .6em;
+    }
+
+    .contact1 {
+        height: 250px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+}
+
+/* Media Queries Small Screen */
+@media screen and (max-width: 320px){
+    .title {
+        font-size: 1.50em;
+    }
+
+    .nav-container {
+        flex-direction: column;
+      
+    }
+    .navbar {
+        font-size: .5em;
+    }
+
+    .web-large {
+        background-size: 210px 200px;
+        font-size: .5em;
+    }
+    
+    .portf-small {
+        flex-direction: column;
+    }
+
+    .web-1, .web-2, .web-3, .web-4 {
+        background-size: 85px 85px;
+        font-size: .4em;
+    }
+
+    .contact1 {
+        height: 275px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .info a {
+        flex: 1 1 .50em;
+    }
+}

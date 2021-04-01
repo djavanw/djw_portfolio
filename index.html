@@ -6,26 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <title>D. Javan | Professional Portfolio</title>
 </head>
 
 <body>
-    <header class="container top-container"><!--parent-wrapper-->
-        <h1 class="title">D.J. Worthy</h1> 
-        <nav class="nav-container"><!--parent-wrapper for navbar-->
-            <a class="navbar" href="#about">About</a>
-            <a class="navbar" href="#works">Works</a>
-            <a class="navbar" href="#contact">Contact</a>
-        </nav>
-    </header>
+    
+    <section class="hero is-primary" id="daHero">
+        <div class="hero-body">
+        <header class="container top-container"><!--parent-wrapper-->
+            <h1 class="title is-size-1 is-flex is-justify-content-center is-align-items-center">Deddrick J. Worthy</h1>
+        </header>    
+        </div>
+    </section>
+    
 
-    <main>
-        <section class="sect1">
-            <article id="about" class="aboutme"><!--parent-wrapper-->
-                <img src="./assets/images/djw96gh.jpg" class="blueshirt" alt="photo of D.J. Worthy in blueshirt">
-                <div class="split"> <!--parent-wrapper to split about me and paragraph to column-->
-                    <h2>About Me</h2> 
+    <nav class="navbar is-center is-flex is-justify-content-space-evenly"><!--parent-wrapper for navbar-->
+        <!-- <div class="navbar-menu is-size-2-mobile"> -->
+            <!-- <div class="navbar-end"> -->
+                <a class="navbar-item" href="#about">About</a>
+                <a class="navbar-item" href="#works">Works</a>
+                <a class="navbar-item" href="#contact">Contact</a>
+                <a class="navbar-item" href="#resume">Resume</a>
+            <!-- </div> -->
+        <!-- </div> -->
+    </nav>
+
+
+
+    <section class="section sect1">
+        <article id="about" class="container aboutme"><!--parent-wrapper-->
+
+            <div class="columns">
+                <div class="column">
+                    <h2 class="is-flex is-justify-content-center">About Me</h2>
+                </div>    
+            </div>
+
+            <div class="columns">
+                <div class="column is-one-third">
+                    <figure class="image is-256x256">
+                        <img src="./assets/images/djw96gh.jpg" id="blueshirt" alt="photo of D.J. Worthy in blueshirt">
+                    </figure>
+                </div>
+                <div class="column is-two-thirds"> 
                     <p>
                         My name is D.J. Worthy and I am a beginning Full Stack Web Developer.
                         This portfolio illustrated the projects in HTML and CSS that I have
@@ -42,13 +66,23 @@
                         decision-making, and technical side of myself to produce outstanding 
                         projects that will meet any user's requirements.
                     </p>
-                </div>
-            </article>
-        </section>
+                </div>  
+            </div>    
+        </article>
+    </section>
 
-        <section class="sect2">
+
+
+    <section class="section sect2">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h2 class="is-flex is-justify-content-center">Works</h2>
+                </div>        
+            </div>
+            
             <article id="works" class="works1"><!--parent-wrapper-->
-                <h2>Works</h2>
+                
                 <div class="portf">
                     <div class="portf-large"><!--parent-wrapper-->
                         <a class="web-large" href="https://djavanw.github.io/digitalmarketing/" target="_blank">Refactor</a>
@@ -61,18 +95,41 @@
                     </div>
                 </div>
                 <!-- Referenced W3Schools to link page to an image -->
-                           
+                            
             </article>
-        </section> 
-        <section class="sect3">  
-            <article id="contact" class="contact1">
-                <h2>Contact</h2>
-                <div class="info">
-                    <a href="mailto:emailfake@qmail.com">Send an Email</a>
-                    <a href="tel:Mobile: 555-525-7777">Call 555-525-7777</a>
+        </div>    
+    </section> 
+
+
+
+
+        <section class="sect3">
+            
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h2 class="is-flex is-justify-content-center">Contact</h2>
+                    </div>
                 </div>
-            </article>
+            </div>
+
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="info">
+                            <a href="mailto:emailfake@qmail.com">Send an Email</a>
+                            <a href="tel:Mobile: 555-525-7777">Call 555-525-7777</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
         </section>
+
+    
+    <main>
+     
+     
+        
 
     </main>
 
@@ -80,6 +137,9 @@
         <p>All Rights Reserved</p>
     </footer>
   
+
+
+
 </body>
 
 </html>
