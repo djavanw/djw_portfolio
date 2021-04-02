@@ -15,31 +15,39 @@
     <section class="section py-1" id="daHero">
         <header class="container top-container p-1"><!--parent-wrapper-->
             <div class="hero-body notification p-3" id="mainHero">
-                <h1 class="has-text-centered has-text-white is-size-1">Deddrick J. Worthy</h1>
+                <h1 class="has-text-centered has-text-white is-size-1 is-size-2-mobile">Deddrick J. Worthy</h1>
             </div>    
         </header>
 
-        <div class="container">
-            <nav class="navbar notification is-flex-wrap-wrap is-justify-content-space-evenly is-size-3 has-text-white" id="nav"><!--parent-wrapper for navbar-->
-                <!-- <div class="navbar-menu is-size-2-mobile"> -->
-                    <!-- <div class="navbar-end"> -->
-                        <a class="navbar-item" href="#about">About</a>
-                        <a class="navbar-item" href="#works">Works</a>
-                        <a class="navbar-item" href="#contact">Contact</a>
-                        <a class="navbar-item" href="#resume">Resume</a>
-                    <!-- </div> -->
-                <!-- </div> -->
-            </nav>
-        </div>
+    <div class="container">
+        <nav class="navbar notification is-flex-wrap-wrap is-justify-content-space-evenly is-size-3 is-size-4-mobile has-text-white" id="nav"><!--parent-wrapper for navbar-->
+            <div class="navbar-brand">
+                <a class="navbar-burger is-size-1" aria-label="menu" aria-expanded="false" id="burger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>  
+                </a>
+
+            </div>
+            <div class="navbar-menu" id="nav-links">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#about">About</a>
+                    <a class="navbar-item" href="#works">Works</a>
+                    <a class="navbar-item" href="#contact">Contact</a>
+                    <a class="navbar-item" href="#resume">Resume</a>
+                </div>
+            </div>
+        </nav>
+    </div>
 
      
     </section>
         
-    <section class="section" id="me">
+    <section class="section pt-0 pb-0" id="me">
       <div class="container notification" id="about">
         <div class="columns aboutme" >
             <div class="column" >
-                <h2 class="subtitle is-size-2 has-text-centered has-text-white" >About Me</h2>
+                <h2 class="subtitle is-size-2 has-text-centered has-text-white is-size-3-mobile" >About Me</h2>
             </div>    
         </div>
     </div> 
@@ -50,7 +58,7 @@
                     <img src="./assets/images/djw96gh.jpg" id="blueshirt" alt="photo of D.J. Worthy in blueshirt">
                 </figure>
             </div>
-            <div class="column is-two-thirds is-size-4 has-text-white"> 
+            <div class="column is-two-thirds is-size-4 has-text-white is-size-5-mobile"> 
                 <p>
                     My name is D.J. Worthy and I am a beginning Full Stack Web Developer.
                     This portfolio illustrated the projects in HTML, CSS, and JavaScript that I have
@@ -73,16 +81,16 @@
 
     </section>  
     <section class="section sect2 is-flex" >
-        <div class="container" >
+        <div class="container pt-0">
             <div class="columns" >
                 <div class="column" >
-                    <h2 class="has-text-centered is-size-2 notification has-text-white" id="works" >Works</h2>
+                    <h2 class="has-text-centered is-size-2 notification has-text-white is-size-3-mobile" id="works">Works</h2>
                 </div>        
             </div>            
         </div>    
     </section>                   
     <section class="container">
-             <div class="is-ancestor is-flex">
+             <div class="is-ancestor is-flex-tablet">
                 <div class="tile is-8 is-parent">      
                     <div class="tile is-child box portf-large is-size-4 notification has-text-white"><!--parent-wrapper-->
                         <figure class="image is-256x256">
@@ -125,12 +133,12 @@
             <div class="container notification" id="contact">
                 <div class="columns">
                     <div class="column" >
-                        <h2 class="is-flex is-size-2 is-justify-content-center has-text-white" >Contact</h2>
+                        <h2 class="is-flex is-size-2 is-justify-content-center has-text-white is-size-3-mobile" >Contact</h2>
                     </div>
                 </div>
             </div>
 
-            <div class="container notification is-size-4 has-text-white" id="info">
+            <div class="container notification is-size-4 has-text-white is-size-4-mobile" id="info">
                 <div class="columns">
                     <div class="column is-flex is-justify-content-space-around">
                         <a href="mailto:emailfake@qmail.com">Send an Email</a>
@@ -154,7 +162,7 @@
   
 
 
-
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
