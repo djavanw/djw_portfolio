@@ -12,86 +12,83 @@
 
 <body>
     
-    <section class="hero is-primary" id="daHero">
-        <div class="hero-body">
-        <header class="container top-container"><!--parent-wrapper-->
-            <h1 class="title is-size-1 is-flex is-justify-content-center is-align-items-center">Deddrick J. Worthy</h1>
-        </header>    
-        </div>
-    </section>
-    
-
-    <nav class="navbar is-center is-flex is-justify-content-space-evenly"><!--parent-wrapper for navbar-->
-        <!-- <div class="navbar-menu is-size-2-mobile"> -->
-            <!-- <div class="navbar-end"> -->
-                <a class="navbar-item" href="#about">About</a>
-                <a class="navbar-item" href="#works">Works</a>
-                <a class="navbar-item" href="#contact">Contact</a>
-                <a class="navbar-item" href="#resume">Resume</a>
-            <!-- </div> -->
-        <!-- </div> -->
-    </nav>
-
-
-
-    <section class="section sect1">
-        <article id="about" class="container aboutme"><!--parent-wrapper-->
-
-            <div class="columns">
-                <div class="column">
-                    <h2 class="is-flex is-justify-content-center">About Me</h2>
-                </div>    
-            </div>
-
-            <div class="columns">
-                <div class="column is-one-third">
-                    <figure class="image is-256x256">
-                        <img src="./assets/images/djw96gh.jpg" id="blueshirt" alt="photo of D.J. Worthy in blueshirt">
-                    </figure>
-                </div>
-                <div class="column is-two-thirds"> 
-                    <p>
-                        My name is D.J. Worthy and I am a beginning Full Stack Web Developer.
-                        This portfolio illustrated the projects in HTML and CSS that I have
-                        accomplished thus far in my journey.  This page inspired me to
-                        learn different techniques in designing and developing webpage
-                        layouts.  This webpage demonstrates my learning and attention
-                        to detail with just a couple of weeks of formal training.
-                        The new technologies that are learned in web development
-                        will enhance my skills and ability to venture out into
-                        job opportunities that were not thought of in the past.  My current skills,
-                        coupled with the different technologies that accompany a Full
-                        Stack Web Developer, will be a great asset for the next organization I
-                        join.  Coding in general, allows the creative, problem solving, 
-                        decision-making, and technical side of myself to produce outstanding 
-                        projects that will meet any user's requirements.
-                    </p>
-                </div>  
+    <section class="section py-1" id="daHero">
+        <header class="container top-container p-1"><!--parent-wrapper-->
+            <div class="hero-body notification p-3" id="mainHero">
+                <h1 class="has-text-centered has-text-white is-size-1">Deddrick J. Worthy</h1>
             </div>    
-        </article>
-    </section>
+        </header>
 
-
-
-    <section class="section sect2">
         <div class="container">
-            <div class="columns">
-                <div class="column">
-                    <h2 class="is-flex is-justify-content-center">Works</h2>
+            <nav class="navbar notification is-flex is-justify-content-space-evenly is-size-3 has-text-white is-hoverable" id="nav"><!--parent-wrapper for navbar-->
+                <!-- <div class="navbar-menu is-size-2-mobile"> -->
+                    <!-- <div class="navbar-end"> -->
+                        <a class="navbar-item" href="#about">About</a>
+                        <a class="navbar-item" href="#works">Works</a>
+                        <a class="navbar-item" href="#contact">Contact</a>
+                        <a class="navbar-item" href="#resume">Resume</a>
+                    <!-- </div> -->
+                <!-- </div> -->
+            </nav>
+        </div>
+
+     
+    </section>
+        
+    <section class="section" id="me">
+      <div class="container notification" id="about">
+        <div class="columns aboutme" >
+            <div class="column" >
+                <h2 class="subtitle is-size-2 has-text-centered has-text-white" >About Me</h2>
+            </div>    
+        </div>
+    </div> 
+    <div class="container">
+        <div class="columns">
+            <div class="column is-one-third">
+                <figure class="image is-256x256">
+                    <img src="./assets/images/djw96gh.jpg" id="blueshirt" alt="photo of D.J. Worthy in blueshirt">
+                </figure>
+            </div>
+            <div class="column is-two-thirds is-size-4 has-text-white"> 
+                <p>
+                    My name is D.J. Worthy and I am a beginning Full Stack Web Developer.
+                    This portfolio illustrated the projects in HTML and CSS that I have
+                    accomplished thus far in my journey.  This page inspired me to
+                    learn different techniques in designing and developing webpage
+                    layouts.  This webpage demonstrates my learning and attention
+                    to detail with just a couple of weeks of formal training.
+                    The new technologies that are learned in web development
+                    will enhance my skills and ability to venture out into
+                    job opportunities that were not thought of in the past.  My current skills,
+                    coupled with the different technologies that accompany a Full
+                    Stack Web Developer, will be a great asset for the next organization I
+                    join.  Coding in general, allows the creative, problem solving, 
+                    decision-making, and technical side of myself to produce outstanding 
+                    projects that will meet any user's requirements.
+                </p>
+            </div>  
+        </div>    
+    </div>
+
+    </section>  
+    <section class="section sect2" >
+        <div class="container" >
+            <div class="columns" >
+                <div class="column" >
+                    <h2 class="has-text-centered is-size-2 notification has-text-white" id="works" >Works</h2>
                 </div>        
             </div>
             
-            <article id="works" class="works1"><!--parent-wrapper-->
+            <article class="container works1"><!--parent-wrapper-->
                 
                 <div class="portf">
-                    <div class="portf-large"><!--parent-wrapper-->
-                        <a class="web-large" href="https://djavanw.github.io/digitalmarketing/" target="_blank">Refactor</a>
+                    <div class="portf-large is-size-3 notification has-text-white"><!--parent-wrapper-->
+                        <a class="web-large" href="https://djavanw.github.io/digitalmarketing/" target="_blank">Project: Movie Review</a>
                     </div>
-                    <div class="portf-small"><!--parent-wrapper-->
-                        <a class="web-1" href="https://djavanw.github.io/prework-about-me/" target="_blank">PreWork</a>
-                        <a class="web-2" href="#works" target="_blank">PlaceHolder</a>
-                        <a class="web-3" href="#works" target="_blank">PlaceHolder</a>
-                        <a class="web-4" href="#works" target="_blank">PlaceHolder</a>
+                    <div class="portf-small notification is-size-4 has-text-white"><!--parent-wrapper-->
+                        <a class="web-1" href="https://djavanw.github.io/prework-about-me/" target="_blank">Day Scheduler</a>
+                        <a class="web-2" href="#works" target="_blank">Weather Dashboard</a>
                     </div>
                 </div>
                 <!-- Referenced W3Schools to link page to an image -->
@@ -103,23 +100,21 @@
 
 
 
-        <section class="sect3">
+        <section class="section sect3">
             
-            <div class="container">
+            <div class="container notification" id="contact">
                 <div class="columns">
-                    <div class="column">
-                        <h2 class="is-flex is-justify-content-center">Contact</h2>
+                    <div class="column" >
+                        <h2 class="is-flex is-size-2 is-justify-content-center has-text-white" >Contact</h2>
                     </div>
                 </div>
             </div>
 
-            <div class="container">
+            <div class="container notification is-size-4 has-text-white" id="info">
                 <div class="columns">
-                    <div class="column">
-                        <div class="info">
-                            <a href="mailto:emailfake@qmail.com">Send an Email</a>
-                            <a href="tel:Mobile: 555-525-7777">Call 555-525-7777</a>
-                        </div>
+                    <div class="column is-flex is-justify-content-space-around">
+                        <a href="mailto:emailfake@qmail.com">Send an Email</a>
+                        <a href="tel:Mobile: 555-525-7777">Call 555-525-7777</a>
                     </div>
                 </div>
             </div>  
