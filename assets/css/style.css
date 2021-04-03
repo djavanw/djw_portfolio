@@ -36,4 +36,9 @@ a.navbar-item:hover {
 .portf-large, .portf-small, #contact, #info {
   background-color: #2d1f93;
 }
+
+.navbar-burger span {
+  height: 3.25px;
+  width: 56px;
+}
 /*# sourceMappingURL=style.css.map */

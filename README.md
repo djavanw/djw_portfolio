@@ -5,9 +5,9 @@ This webpage is to illustrate the works and projects that have been completed by
 
 ## Screenshot of webpage
 
-![Image_of_Portfolio_Large_DJW](./assets/images/webpage_large.jpeg)
+![Image_of_Portfolio_Large_DJW](./assets/images/updated_portfolio.jpeg)
 
-![Image_of_Portfolio_Small_DJW](./assets/images/webpage_small.jpeg)
+![Image_of_Portfolio_Small_DJW](./assets/images/updated_portfolio_mobile.jpeg)
 
 ## Webpage URL
 
