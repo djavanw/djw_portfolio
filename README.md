@@ -1,4 +1,4 @@
-# Assignment 02:  Portfolio
+# Assignment 02 & 08:  Professional Portfolio
 
 ## Description
 This webpage is to illustrate the works and projects that have been completed by beginning Full Stack Web developer, D. J. Worthy.  The page contains links to various works and contact information.  The webpage was designed and developed with HTML,CSS, Bulma CSS Framework, Sass, and JavaScript.  There was also an extensive use of Flexbox to make the webpage responsive while viewing from devices with different sized screens. 
