@@ -9,32 +9,21 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body, #nav, #nav-links, .footer {
   background-color: #1b1b1b;
 }
 
-#mainHero {
+#mainHero, #about, #works, .portf-large,
+.portf-small, #contact, #info {
   background-color: #2d1f93;
 }
 
-#nav, #nav-links {
+a.navbar-item:visited {
   background-color: #1b1b1b;
 }
 
 a.navbar-item:hover {
   background-color: #414141;
-}
-
-#about {
-  background-color: #2d1f93;
-}
-
-#works {
-  background-color: #2d1f93;
-}
-
-.portf-large, .portf-small, #contact, #info {
-  background-color: #2d1f93;
 }
 
 .navbar-burger span {

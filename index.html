@@ -11,75 +11,76 @@
 </head>
 
 <body>
-    
     <section class="section py-1" id="daHero">
-        <header class="container top-container p-1"><!--parent-wrapper-->
+        <!-- header section -->
+        <header class="container top-container p-1">
             <div class="hero-body notification p-3" id="mainHero">
                 <h1 class="has-text-centered has-text-white is-size-1 is-size-2-mobile">Deddrick J. Worthy</h1>
             </div>    
         </header>
 
-    <div class="container">
-        <nav class="navbar notification is-flex-wrap-wrap is-justify-content-space-evenly is-size-3 is-size-4-mobile has-text-white" id="nav"><!--parent-wrapper for navbar-->
-            <div class="navbar-brand">
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
+        <div class="container">
+            <!-- hamburger menu for mobile -->
+            <nav class="navbar notification is-flex-wrap-wrap is-justify-content-space-evenly is-size-3 is-size-4-mobile has-text-white" id="nav"><!--parent-wrapper for navbar-->
+                <div class="navbar-brand">
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
 
-            </div>
-            <div class="navbar-menu" id="nav-links">
-                <div class="navbar-end">
-                    <a class="navbar-item" href="#about">About</a>
-                    <a class="navbar-item" href="#works">Works</a>
-                    <a class="navbar-item" href="#contact">Contact</a>
-                    <a class="navbar-item" href="./assets/images/smu_resume_portfolio.pdf" target="_blank">Resume</a>
                 </div>
-            </div>
-        </nav>
-    </div>
-
-     
+                <!-- navbar section -->
+                <div class="navbar-menu" id="nav-links">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="#about">About</a>
+                        <a class="navbar-item" href="#works">Works</a>
+                        <a class="navbar-item" href="#contact">Contact</a>
+                        <a class="navbar-item" href="./assets/images/smu_resume_portfolio.pdf" target="_blank">Resume</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </section>
         
     <section class="section pt-0 pb-0" id="me">
-      <div class="container notification" id="about">
-        <div class="columns aboutme" >
-            <div class="column" >
-                <h2 class="subtitle is-size-2 has-text-centered has-text-white is-size-3-mobile" >About Me</h2>
+        <div class="container notification" id="about">
+            <div class="columns aboutme" >
+                <div class="column" >
+                    <h2 class="subtitle is-size-2 has-text-centered has-text-white is-size-3-mobile" >About Me</h2>
+                </div>    
+            </div>
+        </div> 
+        <!-- about me section  -->
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-third">
+                    <figure class="image is-256x256">
+                        <img src="./assets/images/djw96gh.jpg" id="blueshirt" alt="photo of D.J. Worthy in blueshirt">
+                    </figure>
+                </div>
+                <div class="column is-two-thirds is-size-4 has-text-white is-size-5-mobile"> 
+                    <p>
+                        My name is D.J. Worthy and I am a beginning Full Stack Web Developer.
+                        This portfolio illustrated the projects in HTML, CSS, and JavaScript that I have
+                        accomplished thus far in my journey.  This page inspired me to
+                        learn different techniques in designing and developing webpage
+                        layouts.  This webpage demonstrates my learning and attention
+                        to detail with just a couple of weeks of formal training.
+                        The new technologies that are learned in web development
+                        will enhance my skills and ability to venture out into
+                        job opportunities that were not thought of in the past.  My current skills,
+                        coupled with the different technologies that accompany a Full
+                        Stack Web Developer, will be a great asset for the next organization I
+                        join.  Coding in general, allows the creative, problem solving, 
+                        decision-making, and technical side of myself to produce outstanding 
+                        projects that will meet any user's requirements.
+                    </p>
+                </div>  
             </div>    
         </div>
-    </div> 
-    <div class="container">
-        <div class="columns">
-            <div class="column is-one-third">
-                <figure class="image is-256x256">
-                    <img src="./assets/images/djw96gh.jpg" id="blueshirt" alt="photo of D.J. Worthy in blueshirt">
-                </figure>
-            </div>
-            <div class="column is-two-thirds is-size-4 has-text-white is-size-5-mobile"> 
-                <p>
-                    My name is D.J. Worthy and I am a beginning Full Stack Web Developer.
-                    This portfolio illustrated the projects in HTML, CSS, and JavaScript that I have
-                    accomplished thus far in my journey.  This page inspired me to
-                    learn different techniques in designing and developing webpage
-                    layouts.  This webpage demonstrates my learning and attention
-                    to detail with just a couple of weeks of formal training.
-                    The new technologies that are learned in web development
-                    will enhance my skills and ability to venture out into
-                    job opportunities that were not thought of in the past.  My current skills,
-                    coupled with the different technologies that accompany a Full
-                    Stack Web Developer, will be a great asset for the next organization I
-                    join.  Coding in general, allows the creative, problem solving, 
-                    decision-making, and technical side of myself to produce outstanding 
-                    projects that will meet any user's requirements.
-                </p>
-            </div>  
-        </div>    
-    </div>
+    </section>
 
-    </section>  
     <section class="section sect2 is-flex" >
         <div class="container pt-0">
             <div class="columns" >
@@ -88,74 +89,66 @@
                 </div>        
             </div>            
         </div>    
-    </section>                   
+    </section>
+
     <section class="container">
-             <div class="is-ancestor is-flex-tablet">
-                <div class="tile is-7 is-parent">      
-                    <div class="tile is-child box portf-large is-size-4 notification has-text-white"><!--parent-wrapper-->
-                        <figure class="image is-256x256">
-                            <img src="./assets/images/movie_review.jpeg" alt="screen capture of movie review application">
-                            <a class="web-large" href="https://djavanw.github.io/project_one_movie_review/" target="_blank">Project: Movie Review</a>
-                        </figure>    
-                    </div>
-            
+        <!-- works portfolio section -->
+        <div class="is-ancestor is-flex-tablet">
+            <div class="tile is-7 is-parent">      
+                <div class="tile is-child box portf-large is-size-4 notification has-text-white">
+                    <figure class="image is-256x256">
+                        <img src="./assets/images/movie_review.jpeg" alt="screen capture of movie review application">
+                        <a class="web-large" href="https://djavanw.github.io/project_one_movie_review/" target="_blank">Project: Movie Review</a>
+                    </figure>    
                 </div>
         
-        
-                <div class="tile is-5 is-vertical is-parent"> 
-                    <div class="tile is-child box portf-small notification is-size-4 has-text-white">
-                        <figure class="image">
-                            <img src="./assets/images/weather_dashboard.jpeg" alt="screen capture of weather dashboard application">
-                            <a class="web-1" href="https://djavanw.github.io/weather_dashboard/" target="_blank">Weather</a>
-                        </figure>
-                    </div>
-
-                    <div class="tile is-child box portf-small notification is-size-4 has-text-white"><!--parent-wrapper-->     
-                        <figure class="image">
-                            <img src="./assets/images/work_day_scheduler.jpeg" alt="screen capture of work day Scheduler">
-                            <a class="web-2" href="https://djavanw.github.io/day_schedule/" target="_blank">Day Scheduler</a>
-                        </figure>
-
-                    </div>
-                </div>
-            </div>      
-        </section>           
-           
+            </div>
     
-            <!-- Referenced W3Schools to link page to an image -->
-        
-    <!-- </section>  -->
+            <div class="tile is-5 is-vertical is-parent"> 
+                <div class="tile is-child box portf-small notification is-size-4 has-text-white">
+                    <figure class="image">
+                        <img src="./assets/images/weather_dashboard.jpeg" alt="screen capture of weather dashboard application">
+                        <a class="web-1" href="https://djavanw.github.io/weather_dashboard/" target="_blank">Weather</a>
+                    </figure>
+                </div>
 
-
-
-        <section class="section sect3">
-            
-            <div class="container notification" id="contact">
-                <div class="columns">
-                    <div class="column" >
-                        <h2 class="is-flex is-size-2 is-justify-content-center has-text-white is-size-3-mobile" >Contact</h2>
-                    </div>
+                <div class="tile is-child box portf-small notification is-size-4 has-text-white"><!--parent-wrapper-->     
+                    <figure class="image">
+                        <img src="./assets/images/work_day_scheduler.jpeg" alt="screen capture of work day Scheduler">
+                        <a class="web-2" href="https://djavanw.github.io/day_schedule/" target="_blank">Day Scheduler</a>
+                    </figure>
                 </div>
             </div>
-
-            <div class="container notification is-size-4 has-text-white is-size-5-mobile" id="info">
-                <div class="columns">
-                    <div class="column is-flex is-justify-content-space-around">
-                        <a href="mailto:emailfake@qmail.com">Send an Email</a>
-                        <a href="www.linkedin.com/in/djw20smu21cbc" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/djavanw" target="_blank"><i class="fab fa-github is-size-4"></i></a>
-                        <a href="tel:5555257777">Call: 555-525-7777</a>
-                    </div>
+        </div>      
+    </section>           
+   
+    <section class="section sect3">
+        <!-- contact section -->
+        <div class="container notification" id="contact">
+            <div class="columns">
+                <div class="column" >
+                    <h2 class="is-flex is-size-2 is-justify-content-center has-text-white is-size-3-mobile" >Contact</h2>
                 </div>
-            </div>  
-        </section>
+            </div>
+        </div>
 
+        <div class="container notification is-size-4 has-text-white is-size-5-mobile" id="info">
+            <div class="columns">
+                <div class="column is-flex is-justify-content-space-around">
+                    <a href="mailto:emailfake@qmail.com">Send an Email</a>
+                    <a href="https://www.linkedin.com/in/djw20smu21cbc" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/djavanw" target="_blank"><i class="fab fa-github is-size-4"></i></a>
+                    <a href="tel:5555257777">Call: 555-525-7777</a>
+                </div>
+            </div>
+        </div>  
+    </section>
     
-  
-    <footer>
-        <p>All Rights Reserved</p>
-    </footer>
-  
+    <section class="section">
+        <footer class="footer has-text-centered has-text-white pb-3">
+            <p>All Rights Reserved</p>
+        </footer>
+    </section>
 
     <script src="https://kit.fontawesome.com/b2dae9ee9b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

@@ -8,40 +8,29 @@ html {
     scroll-behavior:smooth;
 }
 
-body {
-    background-color:  #1b1b1b;
-}
-
-#mainHero {
-    background-color: #2d1f93;
-}
-
-#nav, #nav-links {
+body, #nav, #nav-links, .footer {
     background-color: #1b1b1b;
 }
 
-a.navbar-item:hover {
-    background-color: #414141;
-}
-
-#about {
-     background-color: #2d1f93;
-}
-
-
-#works {
+#mainHero, #about, #works, .portf-large, 
+.portf-small, #contact, #info {
     background-color: #2d1f93;
 }
 
-.portf-large, .portf-small, #contact, #info {
-    background-color: #2d1f93;
+a.navbar-item {
+     
+    &:visited {
+        background-color: #1b1b1b;
+    }
+
+    &:hover {
+        background-color: #414141;
+    }
 }
 
 .navbar-burger span {
     height: 3.25px;
     width: 56px;
-    // line-height: 10px !important;
-
 }
 
 
