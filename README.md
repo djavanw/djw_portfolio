@@ -5,16 +5,16 @@
 ## Description
 This webpage is to illustrate the works and projects that have been completed by beginning Full Stack Web developer, D. J. Worthy.  The page contains links to various works and contact information.  The webpage was designed and developed with HTML, CSS, Bulma CSS Framework, Sass, and JavaScript.  There was also an extensive use of Flexbox to make the webpage responsive while viewing from devices with different sized screens. 
 
+## Webpage URL
+
+[Portfolio_Webpage_Live](https://djavanw.github.io/djw_updated_portfolio/)
+
 ## Screenshot of webpage
 
 ![Image_of_Portfolio_Large_DJW](./assets/images/updated_portfolio_a.jpeg)
 
 ## Screenshot of webpage (mobile version)
 ![Image_of_Portfolio_Small_DJW](./assets/images/updated_portfolio_mobile_a.jpeg)
-
-## Webpage URL
-
-[Portfolio_Webpage_Live](https://djavanw.github.io/djw_portfolio/)
 
 ## License
 This project falls under the MIT License.  The full documentation for this license can be found at [MIT Full Documentation](https://choosealicense.com/licenses/mit).
