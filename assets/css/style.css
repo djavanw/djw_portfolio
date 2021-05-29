@@ -31,4 +31,8 @@ a.navbar-item:hover {
   width: 56px;
 }
 
-# sourceMappingURL=style.css.map
+#btnModal {
+  height: 300px;
+  width: auto;
+}
+/*# sourceMappingURL=style.css.map */
